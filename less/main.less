@@ -1,8 +1,13 @@
-@selected : #4CAF50;
+@selected : #484848;
 @navbar-color : #333;
+@bg-color : #B5B5B5;
 
+body{
+    background-color: @bg-color;
+}
 
 ul {
+    z-index: 0;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -11,22 +16,26 @@ ul {
 }
 
 .navbar-icon {
-    width : 70px;
-    height : 70px;
+    width : 50px;
+    height : 50px;
 }
 
 .navbar-item-left {
     float: left;
 }
 
+.navbar-item-right {
+    float: right;
+}
+
 .navbar-item {
     display: block;
     color: white;
     text-align: center;
-    padding: 20px 16px;
+    padding: 20px 20px;
     text-decoration: none;
-}
 
-.active {
+}
+.navbar-item:hover{
     background-color: @selected;
 }

@@ -5,3 +5,14 @@ no-drag {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+.fade-in {
+  animation: opac 0.8s;
+}
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

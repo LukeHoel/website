@@ -12,11 +12,13 @@
 <head>
 </head>
 
-<body ng-app="hoelApp" ng-controller="mainController as vm">       
-
-        <ul>
+<body ng-app="hoelApp" ng-controller="mainController as vm">                               
+        <ul ng-style="vm.style">  
                 <li>
-                        <img src="assets/icon-white.svg" class="svg navbar-icon no-drag" alt="">
+                       <div class="navbar-item navbar-item-left">Menu</div>
+                </li>               
+                <li>
+                        <div class="navbar-item navbar-item-right">Luke Hoel</div>
                 </li>
         </ul>
 </body>
