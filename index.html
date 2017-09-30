@@ -13,7 +13,7 @@
 </head>
 
 <body ng-app="hoelApp" ng-controller="mainController as vm">                               
-        <div style="padding-left:250px;"/>
+        <div ng-if="vm.isNavbarOut" style="padding-left:250px;"/>
         <ul>  
                 <li>
                        <div ng-click="vm.isNavbarOut = !vm.isNavbarOut" class="navbar-item navbar-item-left">Menu</div>
