@@ -12,9 +12,12 @@
 <head>
 </head>
 
-<body ng-app="hoelApp" ng-controller="mainController as vm">                               
-        <div ng-hide="vm.isNavbarOut == false" style="padding-left:250px;"/>
-        <ul>  
+<body ng-app="hoelApp" ng-controller="mainController as vm">   
+        <div>
+        <div ng-if="vm.isNavbarOut" style="padding-left:250px;"/>
+        </div>
+        <div>
+              <ul>  
                 <li>
                        <div ng-click="vm.isNavbarOut = !vm.isNavbarOut" class="navbar-item navbar-item-left">Menu</div>
                 </li>               
@@ -22,6 +25,7 @@
                         <div class="navbar-item navbar-item-right">Luke Hoel</div>
                 </li>
         </ul>
+        </div>
         {{vm.isNavbarOut}}
 </body>
 
