@@ -2,6 +2,7 @@ function mainController () {
 
     var vm = this;
 
+    vm.isNavbarOut=false;
 }
     
     angular
