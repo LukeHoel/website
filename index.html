@@ -9,6 +9,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script src="js/hoelApp.js"></script>
 <script src="js/controllers/mainController.js"></script>
+<script src="js/routing.js"></script>
 
 <head>
 </head>
@@ -25,11 +26,13 @@
                                         <div class="hamburgerIcon" ng-class="{'hamburgerFlat': vm.isNavbarOpen, 'toggleOn': vm.isNavbarOpen, 'toggleOff': !vm.isNavbarOpen }"></div>
                                         <div class="hamburgerIcon" ng-class="{'hamburgerFlat': vm.isNavbarOpen, 'toggleOn': vm.isNavbarOpen, 'toggleOff': !vm.isNavbarOpen }"></div>
                                 </div>
-                        </div>
+                        </div>                        
                 </div>
         </div>
-        <div class="container fluid" ng-click="vm.isNavbarOpen = false;">
-                <h1>Luke Hoel </h1>
+        <div class="container-fluid row" ng-click="vm.isNavbarOpen = false;">
+                <div class="col-sm-2">
+                        
+                </div>
         </div>
 
 </body>

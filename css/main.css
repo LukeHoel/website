@@ -1,5 +1,8 @@
 body {
-  background-color: #F6E8EA;
+  background-color: #B7C0EE;
+}
+.content {
+  margin-right: 100px;
 }
 .glyphicon {
   color: white;
@@ -8,7 +11,7 @@ body {
   margin-left: 10px;
 }
 .sidebar {
-  background-color: #22181C;
+  background-color: #330C2F;
   height: 100vh;
 }
 .hiddenNav {
