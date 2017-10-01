@@ -9,15 +9,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script src="js/hoelApp.js"></script>
 <script src="js/controllers/mainController.js"></script>
-<script src="js/routing.js"></script>
 
 <head>
 </head>
 
-<body ng-app="hoelApp" ng-controller="mainController as vm">
+<body ng-cloak ng-app="hoelApp" ng-controller="mainController as vm">
 
         <div>
-                <div ng-cloak class="sidebar col-xs-3" ng-class="{ 'hiddenNav': !vm.isNavbarOpen, 'toggleOn': vm.isNavbarOpen, 'toggleOff': !vm.isNavbarOpen }"
+                <div id="sidebar"class="sidebar col-xs-3" ng-class="{ 'hiddenSideBar': !vm.isNavbarOpen, 'toggleOn': vm.isNavbarOpen, 'toggleOff': !vm.isNavbarOpen }"
                         ng-click="vm.isNavbarOpen = !vm.isNavbarOpen">
                         <div>
                                 <!-- <div class="glyphicon glyphicon-menu-hamburger"/> -->
@@ -26,12 +25,18 @@
                                         <div class="hamburgerIcon" ng-class="{'hamburgerFlat': vm.isNavbarOpen, 'toggleOn': vm.isNavbarOpen, 'toggleOff': !vm.isNavbarOpen }"></div>
                                         <div class="hamburgerIcon" ng-class="{'hamburgerFlat': vm.isNavbarOpen, 'toggleOn': vm.isNavbarOpen, 'toggleOff': !vm.isNavbarOpen }"></div>
                                 </div>
-                        </div>                        
+                        </div>
+                        <div class="top" style="margin-top: 30px;" ng-class="{ 'hiddenLink': !vm.isNavbarOpen, 'link': vm.isNavbarOpen}">
+                                <div ng-repeat="link in vm.links">
+                                        <div class="sidebarLink" ng-bind="link.name" />
+                                </div>
+                        </div>
+
                 </div>
         </div>
-        <div class="container-fluid row" ng-click="vm.isNavbarOpen = false;">
-                <div class="col-sm-2">
-                        
+        <div class="container row" ng-click="vm.isNavbarOpen = false;">
+                <div class="col-sm-4">
+
                 </div>
         </div>
 

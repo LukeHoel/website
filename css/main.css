@@ -14,8 +14,24 @@ body {
   background-color: #330C2F;
   height: 100vh;
 }
-.hiddenNav {
+.sidebarLink {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.hiddenSideBar {
   width: 70px;
+}
+.link {
+  opacity: 1;
+  transition: .5s;
+}
+.hiddenLink {
+  opacity: 0;
+  transition: .5s;
 }
 .hamburgerIcon {
   background-color: white;
@@ -23,6 +39,7 @@ body {
   height: 3px;
   margin: 0 auto;
   margin-top: 5px;
+  transition: 1s;
 }
 .hamburgerFlat {
   width: 80px;

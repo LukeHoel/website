@@ -7,4 +7,13 @@ no-drag{
     -webkit-user-select: none;
     -ms-user-select: none;
 }
-.fade-in{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.top{
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+.bottom{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+.fade-out{animation:opac .2s}@keyframes opac{from{opacity:1} to{opacity:0}}
+.fade-in{animation:opac .2s}@keyframes opac{from{opacity:0} to{opacity:1}}
