@@ -1,5 +1,6 @@
+// out: ../css/colors.css, out:false
 {    
-    "less.compile": {   
+    "less.compile": {      
         "out": "../css/"
     }
 }

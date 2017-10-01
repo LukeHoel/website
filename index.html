@@ -2,15 +2,35 @@
 
 <html lang="en">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/utils.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script src="js/hoelApp.js"></script>
 <script src="js/controllers/mainController.js"></script>
+
 <head>
 </head>
 
 <body ng-app="hoelApp" ng-controller="mainController as vm">
+
+        <div>
+                <div ng-cloak class="sidebar col-xs-3" ng-class="{ 'hiddenNav': !vm.isNavbarOpen, 'toggleOn': vm.isNavbarOpen, 'toggleOff': !vm.isNavbarOpen }"
+                        ng-click="vm.isNavbarOpen = !vm.isNavbarOpen">
+                        <div>
+                                <!-- <div class="glyphicon glyphicon-menu-hamburger"/> -->
+                                <div style="margin-top:20px;">
+                                        <div class="hamburgerIcon" ng-class="{'hamburgerFlat': vm.isNavbarOpen, 'toggleOn': vm.isNavbarOpen, 'toggleOff': !vm.isNavbarOpen }"></div>
+                                        <div class="hamburgerIcon" ng-class="{'hamburgerFlat': vm.isNavbarOpen, 'toggleOn': vm.isNavbarOpen, 'toggleOff': !vm.isNavbarOpen }"></div>
+                                        <div class="hamburgerIcon" ng-class="{'hamburgerFlat': vm.isNavbarOpen, 'toggleOn': vm.isNavbarOpen, 'toggleOff': !vm.isNavbarOpen }"></div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <div class="container fluid" ng-click="vm.isNavbarOpen = false;">
+                <h1>Luke Hoel </h1>
+        </div>
 
 </body>
 

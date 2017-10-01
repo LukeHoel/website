@@ -1,31 +1,40 @@
 body {
-  background-color: #B5B5B5;
+  background-color: #F6E8EA;
 }
-ul {
-    z-index: 0;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-.navbar-icon {
-  width: 50px;
-  height: 50px;
-}
-.navbar-item-left {
-  float: left;
-}
-.navbar-item-right {
-  float: right;
-}
-.navbar-item {
-  display: block;
+.glyphicon {
   color: white;
-  text-align: center;
-  padding: 20px 20px;
-  text-decoration: none;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
-.navbar-item:hover {
-  background-color: #484848;
+.sidebar {
+  background-color: #22181C;
+  height: 100vh;
+}
+.hiddenNav {
+  width: 70px;
+}
+.hamburgerIcon {
+  background-color: white;
+  width: 30px;
+  height: 3px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.hamburgerFlat {
+  width: 80px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.toggleOff {
+  transition: width 1s;
+  -webkit-transition: width 1s;
+  -moz-transition: width 1s;
+  -o-transition: width 1s;
+}
+.toggleOn {
+  transition: width .5s;
+  -webkit-transition: width .5s;
+  -moz-transition: width .5s;
+  -o-transition: width .5s;
 }

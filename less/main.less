@@ -1,41 +1,49 @@
-@selected : #484848;
-@navbar-color : #333;
-@bg-color : #B5B5B5;
+@import "colors.less";
 
 body{
     background-color: @bg-color;
 }
 
-ul {
-    z-index: 0;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.glyphicon{
+    color:@icon-color;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left:10px;
+}
+
+.sidebar {
     background-color: @navbar-color;
+    height: 100vh;
 }
 
-.navbar-icon {
-    width : 50px;
-    height : 50px;
+.hiddenNav{
+    width:70px;
 }
 
-.navbar-item-left {
-    float: left;
+.hamburgerIcon{
+    background-color: @icon-color;   
+    width:30px;
+    height:3px;
+    margin: 0 auto;
+    margin-top:5px;
 }
 
-.navbar-item-right {
-    float: right;
+.hamburgerFlat{
+    width:80px;
+    margin: 0 auto;
+    margin-top:5px;
 }
 
-.navbar-item {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 20px;
-    text-decoration: none;
-
+.toggleOff {
+    transition: width 1s;
+    -webkit-transition: width 1s;        
+    -moz-transition: width 1s;        
+    -o-transition: width 1s;
 }
-.navbar-item:hover{
-    background-color: @selected;
+
+.toggleOn {
+    transition: width .5s;
+    -webkit-transition: width .5s;        
+    -moz-transition: width .5s;        
+    -o-transition: width .5s;
 }
