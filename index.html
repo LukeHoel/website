@@ -17,7 +17,7 @@
 
         <div>
                 <div id="sidebar" class="sidebar col-xs-3" ng-class="{ 'hiddenSideBar': !vm.isNavbarOpen, 'toggleOn': vm.isNavbarOpen, 'toggleOff': !vm.isNavbarOpen }"
-                        ng-click="vm.isNavbarOpen = true">
+                        ng-click="vm.isNavbarOpen = ! vm.isNavbarOpen">
                         <div>
                                 <!-- <div class="glyphicon glyphicon-menu-hamburger"/> -->
                                 <div style="margin-top:20px;">
@@ -26,9 +26,10 @@
                                         <div class="hamburgerIcon" ng-class="{'hamburgerFlat': vm.isNavbarOpen, 'toggleOn': vm.isNavbarOpen, 'toggleOff': !vm.isNavbarOpen }"></div>
                                 </div>
                         </div>
-                        <div class="top" style="margin-top: 30px;" ng-class="{ 'hiddenLink': !vm.isNavbarOpen, 'link': vm.isNavbarOpen}">
-                                <div ng-repeat="link in vm.links">
-                                        <div ng-click="vm.selectedLink=link" class="sidebarLink" ng-bind="link.name" />
+                        <div style="margin-top: 30px;" ng-class="{ 'hiddenLink': !vm.isNavbarOpen, 'link': vm.isNavbarOpen}">
+                                <div ng-repeat="link in vm.links" ng-style="{'background-color':link.linkcolor}" ng-click="$event.stopPropagation(); vm.selectedLink=link;" class="linkContainer col-xs-6">
+                                        <div class="sidebarLink" ng-bind="link.name" />
+                                        <div class="sidebarLink overlay"></div>
                                 </div>
                         </div>
 
@@ -36,7 +37,7 @@
         </div>
         <div class="container row" ng-click="vm.isNavbarOpen = false;">
                 <div class="col-sm-4">
-                        <div ng-include="vm.selectedLink.html"></div>
+                        <div class="fade-in"ng-include="vm.selectedLink.html"></div>
                 </div>
         </div>
 

@@ -9,11 +9,48 @@ no-drag{
 }
 .top{
     border-top: 1px solid @icon-color;
-    padding-top: 20px;
 }
 .bottom{
     border-bottom: 1px solid @icon-color;
-    padding-bottom: 20px;
+}
+.left{
+    border-left: 1px solid @icon-color;
+}
+.right{
+    border-right: 1px solid @icon-color;
+}
+.ng-include-fade.ng-enter,
+.ng-include-fade.ng-leave {
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
+.ng-include-fade.ng-enter {
+  z-index: 100;
+  opacity: 0;
+}
+.ng-include-fade.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+.ng-include-fade.ng-leave {
+  z-index: 101;
+  opacity: 1;
+}
+.ng-include-fade.ng-leave.ng-leave-active {
+  opacity: 0;
 }
 .fade-out{animation:opac .2s}@keyframes opac{from{opacity:1} to{opacity:0}}
 .fade-in{animation:opac .2s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.overlay {
+    position: relative; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
