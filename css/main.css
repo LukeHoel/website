@@ -1,5 +1,5 @@
 body {
-  background-color: #B7C0EE;
+  background-color: #53B3CB;
 }
 .content {
   margin-right: 100px;
@@ -11,7 +11,7 @@ body {
   margin-left: 10px;
 }
 .sidebar {
-  background-color: #330C2F;
+  background-color: #E01A4F;
   height: 100vh;
 }
 .sidebarLink {
@@ -20,7 +20,7 @@ body {
   text-align: center;
   margin-bottom: 30px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid white;
 }
 .hiddenSideBar {
   width: 70px;
@@ -36,7 +36,7 @@ body {
 .hamburgerIcon {
   background-color: white;
   width: 30px;
-  height: 3px;
+  height: 2px;
   margin: 0 auto;
   margin-top: 5px;
   transition: 1s;
