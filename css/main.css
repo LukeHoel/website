@@ -27,7 +27,8 @@ h1 {
 }
 .sidebar {
   background-color: #E01A4F;
-  height: 150%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 .sidebarLink {
   color: white;
@@ -45,11 +46,13 @@ h1 {
 }
 .hiddenSideBar {
   width: 70px;
+  -webkit-overflow-scrolling: touch;
 }
 .fixed {
   position: fixed;
   top: 0px;
   height: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 .link {
   opacity: 1;
