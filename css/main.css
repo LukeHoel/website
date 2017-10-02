@@ -36,6 +36,11 @@ h1 {
 .hiddenSideBar {
   width: 70px;
 }
+.fixed {
+  position: fixed;
+  top: 0px;
+  height: 100%;
+}
 .link {
   opacity: 1;
   transition: .5s;
@@ -68,4 +73,13 @@ h1 {
   -webkit-transition: width .5s;
   -moz-transition: width .5s;
   -o-transition: width .5s;
+}
+.pad {
+  margin: 0px;
+}
+.navbarOut {
+  transition: .5s all;
+}
+.navbarIn {
+  transition: 1s all;
 }

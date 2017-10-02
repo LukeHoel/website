@@ -16,7 +16,7 @@
 <body ng-cloak ng-app="hoelApp" ng-controller="mainController as vm">
 
         <div>
-                <div id="sidebar" class="sidebar col-xs-3" ng-class="{ 'hiddenSideBar': !vm.isNavbarOpen, 'toggleOn': vm.isNavbarOpen, 'toggleOff': !vm.isNavbarOpen }"
+                <div id="sidebar" class="fixed sidebar col-xs-12 col-md-3" ng-class="{ 'hiddenSideBar': !vm.isNavbarOpen, 'toggleOn': vm.isNavbarOpen, 'toggleOff': !vm.isNavbarOpen }"
                         ng-click="vm.isNavbarOpen = ! vm.isNavbarOpen">
                         <div>
                                 <!-- <div class="glyphicon glyphicon-menu-hamburger"/> -->
@@ -35,8 +35,8 @@
 
                 </div>
         </div>
-        <div class="container row" ng-click="vm.isNavbarOpen = false;">
-                <div class="col-sm-4">
+        <div class="container" ng-click="vm.isNavbarOpen = false;">
+                <div style="padding-left:70px;" class="float-left" ng-class="{'col-xs-offset-12': vm.isNavbarOpen, 'col-md-offset-3': vm.isNavbarOpen, 'navbarOut': vm.isNavbarOpen, 'navbarIn': !vm.isNavbarOpen}">
                         <div class="fade-in" ng-include="vm.selectedLink.html"></div>
                 </div>
         </div>
