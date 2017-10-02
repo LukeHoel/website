@@ -7,14 +7,11 @@ function mainController () {
         return "test";
     }
 
-    vm.getWidth = function getWidth(){
-        var width = document.getElementById('sidebar').clientWidth;
-    }
-
     vm.links = [
-        {name : "Home", html: "html/main.html", controller: "js/controllers/main.js"},
-        {name : "Bio", html: "html/bio.html", controller: "js/controllers/bio.js"}
+        {name : "Home", html: "../html/main.html"},
+        {name : "Bio", html: "../html/bio.html"}
     ]
+    vm.selectedLink = vm.links[0];
 
 
 }
