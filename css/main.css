@@ -27,7 +27,7 @@ h1 {
 }
 .sidebar {
   background-color: #E01A4F;
-  height: 100vh;
+  height: 100%;
 }
 .sidebarLink {
   color: white;

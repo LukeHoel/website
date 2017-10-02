@@ -18,6 +18,10 @@ function mainController() {
             vm.selectedLink = link;
         }
     }
+    vm.closeNav = function closeNav(){
+        if(vm.isNavbarOpen)
+        vm.isNavbarOpen = false;
+    }
 
 }
 
