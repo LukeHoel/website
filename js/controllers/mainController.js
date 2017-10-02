@@ -8,8 +8,8 @@ function mainController() {
     }
 
     vm.links = [
-        { name: "Home", html: "../html/main.html", linkcolor: "#53B3CB" },
-        { name: "Bio", html: "../html/bio.html", linkcolor: "#F9C22E" }
+        { name: "Home", html: "html/main.html", linkcolor: "#53B3CB" },
+        { name: "Bio", html: "html/bio.html", linkcolor: "#F9C22E" }
     ]
     vm.selectedLink = vm.links[0];
     vm.setLink = function setLink($event,link) {
