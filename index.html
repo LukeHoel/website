@@ -4,6 +4,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
 <link href="css/utils.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
@@ -11,7 +12,7 @@
 <script src="js/controllers/mainController.js"></script>
 
 <head>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body ng-cloak ng-app="hoelApp" ng-controller="mainController as vm">
@@ -28,18 +29,33 @@
                                 </div>
                         </div>
                         <div style="margin-top: 30px;" ng-class="{ 'hiddenLink': !vm.isNavbarOpen, 'link': vm.isNavbarOpen}">
-                                        <div ng-repeat="link in vm.links" ng-style="{'background-color':link.linkcolor}" ng-click="vm.setLink($event,link)" class="linkContainer col-xs-6">
-                                                <div class="sidebarLink" ng-bind="link.name" />
-                                                <div class="sidebarLink overlay"></div>
-                                        </div>
+                                <div ng-repeat="link in vm.links" ng-style="{'background-color':link.linkcolor}" ng-click="vm.setLink($event,link)" class="linkContainer col-xs-6">
+                                        <div class="sidebarLink" ng-bind="link.name" />
+                                        <div class="sidebarLink overlay"></div>
                                 </div>
+                        </div>
 
                 </div>
         </div>
-        <div class="container" ng-click="vm.closeNav()">
+        <div class="container" ng-click="vm.closeNav()" style="margin-right:0;">
                 <div class="mobileoffset float-left col-xs-12 col-md-8" ng-class="{'col-xs-offset-12': vm.isNavbarOpen, 'col-md-offset-3': vm.isNavbarOpen, 'navbarOut': vm.isNavbarOpen, 'navbarIn': !vm.isNavbarOpen}">
-                        <div class="fade-in" ng-include="vm.selectedLink.html" onload="vm.closeNavForMobile();"></div>
+                        <div class="fade-in" ng-include="vm.selectedLink.html" onload="vm.closeNavForMobile();" style="margin:auto;"></div>
+
                 </div>
+                <style>
+                        .underlay {
+                                z-index: -1;
+                                margin: 0;
+                                padding: 0;
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 100%;
+                                height: 100%;
+                                overflow: hidden;
+                        }
+                </style>
+                <div class="underlay" ng-click="vm.closeNav()"></div>
         </div>
 
 </body>

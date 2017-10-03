@@ -8,25 +8,29 @@ function mainController() {
     }
 
     vm.links = [
-        { name: "Home", html: "html/home.html", linkcolor: "#53B3CB" },
-        { name: "Bio", html: "html/bio.html", linkcolor: "#F9C22E" }
+        { name: "Home", html: "html/home.html", linkcolor: "#53B3CB" }
     ]
     vm.selectedLink = vm.links[0];
-    vm.setLink = function setLink($event,link) {
+    vm.setLink = function setLink($event, link) {
         if (vm.isNavbarOpen) {
-            $event.stopPropagation(); 
+            $event.stopPropagation();
             vm.selectedLink = link;
         }
     }
 
-    vm.closeNavForMobile = function closeNavForMobile(){
-        if(window.innerWidth <= 992)
+    vm.closeNavForMobile = function closeNavForMobile() {
+        if (window.innerWidth <= 992)
             vm.closeNav();
     }
 
-    vm.closeNav = function closeNav(){
-        if(vm.isNavbarOpen)
-        vm.isNavbarOpen = false;
+    vm.closeNav = function closeNav() {
+        if (vm.isNavbarOpen)
+            vm.isNavbarOpen = false;
+    }
+    vm.isSmallScreen = function isSmallScreen() {
+        if (window.innerWidth <= 992)
+            return true;
+        return false;
     }
 
 }

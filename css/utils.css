@@ -1,42 +1,20 @@
-no-drag {
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+.center {
+  margin: auto;
+  text-align: center;
 }
-.top {
-  border-top: 1px solid white;
+.pad-down {
+  padding-bottom: 20px;
 }
-.bottom {
-  border-bottom: 1px solid white;
+.fade-slow {
+  animation: opac 0.5s;
 }
-.left {
-  border-left: 1px solid white;
-}
-.right {
-  border-right: 1px solid white;
-}
-.ng-include-fade.ng-enter,
-.ng-include-fade.ng-leave {
-  -webkit-transition: 0.5s linear all;
-  -moz-transition: 0.5s linear all;
-  -o-transition: 0.5s linear all;
-  transition: 0.5s linear all;
-}
-.ng-include-fade.ng-enter {
-  z-index: 100;
-  opacity: 0;
-}
-.ng-include-fade.ng-enter.ng-enter-active {
-  opacity: 1;
-}
-.ng-include-fade.ng-leave {
-  z-index: 101;
-  opacity: 1;
-}
-.ng-include-fade.ng-leave.ng-leave-active {
-  opacity: 0;
+@keyframes opac {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 .fade-out {
   animation: opac 0.2s;
@@ -59,22 +37,4 @@ no-drag {
   to {
     opacity: 1;
   }
-}
-.overlay {
-  position: relative;
-  /* Sit on top of the page content */
-  width: 100%;
-  /* Full width (cover the whole page) */
-  height: 100%;
-  /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Black background with opacity */
-  z-index: 2;
-  /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer;
-  /* Add a pointer on hover */
 }

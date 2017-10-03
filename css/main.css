@@ -5,6 +5,13 @@ body {
 }
 h1 {
   color: white;
+  font-weight: lighter;
+}
+h2 {
+  color: #414141;
+}
+img {
+  border-radius: 20px;
 }
 .content {
   margin-right: 100px;
