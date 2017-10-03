@@ -91,9 +91,6 @@ h1 {
 }
 /* Mobile. needs to be at bottom to override styles*/
 @media screen and (max-width: 768px) {
-  .sidebarLink {
-    font-size: 50px;
-  }
   .col-xs-offset-12 {
     opacity: 0;
   }
@@ -104,7 +101,7 @@ h1 {
     z-index: 2;
   }
   .smallSidebar {
-    height: 8%;
+    height: 60px;
   }
   .fullSidebar {
     height: 100%;
