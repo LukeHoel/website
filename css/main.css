@@ -2,10 +2,10 @@ body {
   background-color: #53B3CB;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
+  font-size: 20px;
 }
 h1 {
   color: white;
-  font-weight: lighter;
 }
 h2 {
   color: #414141;

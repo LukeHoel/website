@@ -5,6 +5,10 @@
 .pad-down {
   padding-bottom: 20px;
 }
+.border {
+  border-color: white;
+  border-width: 5px;
+}
 .fade-slow {
   animation: opac 0.5s;
 }
