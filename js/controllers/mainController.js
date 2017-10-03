@@ -14,6 +14,7 @@ function mainController() {
     vm.selectedLink = vm.links[0];
     vm.setLink = function setLink($event,link) {
         if (vm.isNavbarOpen) {
+            if(window.innerWidth >= 992)
             $event.stopPropagation(); 
             vm.selectedLink = link;
         }
