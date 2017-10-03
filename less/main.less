@@ -106,13 +106,14 @@ h1{
 }
 
 /* Mobile. needs to be at bottom to override styles*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .col-xs-offset-12{
         opacity: 0;
         margin:0 auto;
         padding:0 auto;
     }
     .fixed{
+        background-color: @navbar-color;
         position:fixed;
         top:0px;
         height:50px;
