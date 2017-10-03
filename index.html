@@ -17,7 +17,7 @@
 <body ng-cloak ng-app="hoelApp" ng-controller="mainController as vm">
 
         <div>
-                <div id="sidebar" class="fixed sidebar col-xs-12 col-md-3" ng-class="{ 'hiddenSideBar': !vm.isNavbarOpen, 'toggleOn': vm.isNavbarOpen, 'toggleOff': !vm.isNavbarOpen }"
+                <div id="sidebar" class="fixed sidebar col-xs-12 col-md-3" ng-class="{ 'hiddenSideBar': !vm.isNavbarOpen, 'toggleOn': vm.isNavbarOpen, 'toggleOff': !vm.isNavbarOpen, 'smallSidebar': !vm.isNavbarOpen, 'fullSidebar': vm.isNavbarOpen}"
                         ng-click="vm.isNavbarOpen = ! vm.isNavbarOpen">
                         <div>
                                 <!-- <div class="glyphicon glyphicon-menu-hamburger"/> -->

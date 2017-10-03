@@ -1,23 +1,5 @@
 @import "colors.less";
 
-/* ----------- iPhone 5 and 5S ----------- */
-
-/* Portrait and Landscape */
-@media screen and (max-width: 768px) {
-    .sidebarLink {
-        font-size:50px;
-    }
-    .col-xs-offset-12{
-        opacity: 0;
-    }
-    .sidebar {
-        height: 25%;
-    }
-    .mobileoffset{
-        margin-top:50px;
-    }
-}
-
 body{
     background-color: @bg-color;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
@@ -39,7 +21,6 @@ h1{
 
 .sidebar {
     background-color: @navbar-color;
-    height: 100%;
 }
 
 .sidebarLink {
@@ -59,14 +40,21 @@ h1{
 
 .hiddenSideBar{
     width:70px;
-    -webkit-overflow-scrolling: touch;
+}
+
+.smallSidebar{
+    height:100%;
+    transition: .5s;
+}
+
+.fullSidebar{
+    height:100%;
+    transition: .5s;
 }
 
 .fixed{
     position:fixed;
     top:0px;
-    height:100%;
-    -webkit-overflow-scrolling: touch;
 }
 
 .link{
@@ -115,4 +103,29 @@ h1{
 }
 .navbarIn{
     transition: 1s all;
+}
+
+/* Mobile. needs to be at bottom to override styles*/
+@media screen and (max-width: 768px) {
+    .sidebarLink {
+        font-size:50px;
+    }
+    .col-xs-offset-12{
+        opacity: 0;
+    }
+    .fixed{
+        position:fixed;
+        top:0px;
+        height:50px;
+        z-index: 2;
+    }
+    .smallSidebar{
+        height:8%;
+    }
+    .fullSidebar{
+        height:100%;
+    }
+    .mobileoffset{
+        margin-top:50px;
+    }
 }
