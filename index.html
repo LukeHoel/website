@@ -38,7 +38,7 @@
         </div>
         <div class="container" ng-click="vm.closeNav()">
                 <div class="mobileoffset float-left col-xs-12 col-md-8" ng-class="{'col-xs-offset-12': vm.isNavbarOpen, 'col-md-offset-3': vm.isNavbarOpen, 'navbarOut': vm.isNavbarOpen, 'navbarIn': !vm.isNavbarOpen}">
-                        <div class="fade-in" ng-include="vm.selectedLink.html"></div>
+                        <div class="fade-in" ng-include="vm.selectedLink.html" onload="vm.closeNavForMobile();"></div>
                 </div>
         </div>
 

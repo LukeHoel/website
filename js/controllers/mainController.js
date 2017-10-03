@@ -14,11 +14,16 @@ function mainController() {
     vm.selectedLink = vm.links[0];
     vm.setLink = function setLink($event,link) {
         if (vm.isNavbarOpen) {
-            if(window.innerWidth >= 992)
             $event.stopPropagation(); 
             vm.selectedLink = link;
         }
     }
+
+    vm.closeNavForMobile = function closeNavForMobile(){
+        if(window.innerWidth <= 992)
+            vm.closeNav();
+    }
+
     vm.closeNav = function closeNav(){
         if(vm.isNavbarOpen)
         vm.isNavbarOpen = false;
