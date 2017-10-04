@@ -11,19 +11,30 @@
     <h1 class="center pad-down">I'm Luke</h1>
     <h2 class="center">I am a developer, as well as a designer</h2>
     <!--Layout from layoutit. I suck at layout...ing-->
-    <div class="container-fluid" style="margin-top:20px;margin-bottom:20px;">
+    <div class="container-fluid pad-down" style="margin-top:20px;margin-bottom:20px;">
         <div class="row">
+            <style>
+                /* Mobile. needs to be at bottom to override styles*/
+
+                @media screen and (min-width: 993px) {
+                    .shadow {
+                        z-index: 2;
+                        box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.2);
+                        border-radius: 20px;
+                    }
+                }
+            </style>
             <div class="col-md-6 float-left">
-                <img src="assets/code.svg" class="img-responsive" style="float:right;width:45%;" />
+                    <img src="assets/code.svg" class="img-responsive" style="float:right;width:45%;"/>
+                    
             </div>
             <div class="col-md-6">
-                <img alt="Code" src="assets/brasov.svg" class="img-responsive" style="width:45%;"/>
+                <div class="shadow"></div>
+                <img src="assets/brasov.svg" class="img-responsive" style="width:45%;"/>
+
             </div>
         </div>
     </div>
-
-    <div class="center pad-down"> Thanks for checking out my website!</div>
-
 </body>
 
 </html>
