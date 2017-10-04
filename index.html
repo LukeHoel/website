@@ -50,8 +50,8 @@
                 </div>
         </div>
         <div class="container" ng-click="vm.closeNav()" style="margin-right:0;">
-                <div class="mobileoffset float-left col-xs-12 col-md-8" ng-class="{'col-xs-offset-12': vm.isNavbarOpen, 'col-md-offset-3': vm.isNavbarOpen, 'navbarOut': vm.isNavbarOpen, 'navbarIn': !vm.isNavbarOpen}">
-                        <div class="fade-in" ng-include="vm.selectedLink.html" onload="vm.closeNavForMobile();" style="margin:auto;"></div>
+                <div ng-show="vm.pageLoaded"class="mobileoffset float-left col-xs-12 col-md-8" ng-class="{'col-xs-offset-12': vm.isNavbarOpen, 'col-md-offset-3': vm.isNavbarOpen, 'navbarOut': vm.isNavbarOpen, 'navbarIn': !vm.isNavbarOpen}">
+                        <div class="fade-in" ng-include="vm.selectedLink.html" onload="vm.pageLoaded = true;vm.closeNavForMobile();" style="margin:auto;"></div>
 
                 </div>
                 <style>
