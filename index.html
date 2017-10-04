@@ -29,7 +29,7 @@
                                 </div>
                         </div>
                         <div style="margin-top: 30px;" ng-class="{ 'hiddenLink': !vm.isNavbarOpen, 'link': vm.isNavbarOpen}">
-                                <div ng-repeat="link in vm.links" ng-style="{'background-color':link.linkcolor}" ng-click="vm.setLink($event,link)" class="linkContainer col-xs-6">
+                                <div ng-repeat="link in vm.links" style="border-radius: 20px;"ng-style="{'background-color':link.linkcolor}" ng-click="vm.setLink($event,link)" class="linkContainer col-xs-5">
                                         <div class="sidebarLink" ng-bind="link.name" />
                                         <div class="sidebarLink overlay"></div>
                                 </div>
