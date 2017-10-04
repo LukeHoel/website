@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Class Tracker",
+  "description": "This was my final project back in high school, using java awt drawing shapes, and a SQLITE datebase",
+  "photo": "assets/projects/classtraker.jpg",
+  "file" : "files/classtracker.jar"
+  },
+  {
+    "name": "Evolution Algoritm",
+  "description": "Using a brute force method of evolution, this simulation \"learns\" to complete an obstacle course with no assumptions made about it. Of course, lacking proper intelligence, it can get stuck in places...",
+  "photo": "assets/projects/evolution.jpg",
+  "file" : "files/evolution.jar"
+  }
+]

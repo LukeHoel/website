@@ -5,8 +5,18 @@
 <head>
 </head>
 
-<body ng-cloak style="margin:auto;">
-<h1>Projects</h1>
+<bodystyle="margin:auto;">
+    <h1>Projects</h1>
+    <div id ="page" class="container-fluid">
+        <div class="row">
+            <div class="col-md-6" ng-repeat="project in vm.json">
+                <h2 ng-bind="project.name"/>                  
+                <img alt="Bootstrap Image Preview" ng-src="{{project.photo}}" />
+                <p ng-bind="project.description"/>
+                <a ng-hide="vm.isSmallScreen();"target="_self" ng-href="{{project.file}}" download="{{project.file}}">Download File</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
