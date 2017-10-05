@@ -2,7 +2,7 @@ function mainController() {
 
     var vm = this;
     vm.pageLoaded = false;
-    vm.json;
+    vm.json = [];
     // to access functions from html, it seems as though you need to declare like this
     // and call with brackets, even though the variable vm.test has none
     vm.test = function test() {
@@ -36,17 +36,19 @@ function mainController() {
             return true;
         return false;
     }
-    vm.getPageData = function getPageData(location, vm) {
-        vm.json = null;
+    vm.getPageData = function getPageData(vm) {
+        vm.json.push({dummy:"dummy object"});
+        for (var i = 1; i < vm.links.length; i++) { 
         if (location != "none") {
-            $.getJSON(location, function (json) {
+            $.getJSON(vm.links[i].jsonLocation, function (json) {
                 var scope = angular.element($("#page")).scope();
                 scope.$apply(function () {
-                    vm.json = json;
+                    vm.json.push(json);
                 });
             });
         }
     }
+}
 }
 
 angular
