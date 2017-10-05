@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col-md-6" ng-repeat="project in vm.json">
                 <h2 ng-bind="project.name"/>                  
-                <img alt="Bootstrap Image Preview" ng-src="{{project.photo}}" />
+                <img alt="Bootstrap Image Preview" ng-src="{{project.photo}}" class="img-responsive"/>
                 <p ng-bind="project.description"/>
                 <a ng-hide="vm.isSmallScreen();"target="_self" ng-href="{{project.file}}" download="{{project.file}}">Download File</a>
             </div>
