@@ -49,12 +49,6 @@ function mainController() {
             });
         }
     }
-    vm.showMessage = function showMessage(isLast){
-        var vm = this;
-        if(isLast){
-            vm.message = "done";
-        }
-    }
 }
 }
 
