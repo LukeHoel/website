@@ -3,6 +3,7 @@ function mainController() {
     var vm = this;
     vm.pageLoaded = false;
     vm.json = [];
+    vm.message = "";
     // to access functions from html, it seems as though you need to declare like this
     // and call with brackets, even though the variable vm.test has none
     vm.test = function test() {
@@ -46,6 +47,12 @@ function mainController() {
                     vm.json.push(json);
                 });
             });
+        }
+    }
+    vm.showMessage = function showMessage(isLast){
+        var vm = this;
+        if(isLast){
+            vm.message = "done";
         }
     }
 }

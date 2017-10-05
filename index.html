@@ -45,6 +45,7 @@
                                         <div class="sidebarLink" ng-bind="link.name" />
                                         <div class="sidebarLink overlay"></div>
                                 </div>
+                                <div ng-bind="vm.message"></div>
                         </div>
 
                 </div>
@@ -71,7 +72,7 @@
         </div>
 
         <div ng-hide>
-                <img ng-hide ng-repeat="project in vm.json[1]" ng-src="{{project.photo}}" style="position:fixed;left:0;top:0;width:0px;height:0px;"/>
+                <img ng-hide ng-repeat="project in vm.json[1]" ng-init = "vm.showMessage($last)" ng-src="{{project.photo}}" style="position:fixed;left:0;top:0;width:0px;height:0px;"/>
         </div>
 </body>
 
