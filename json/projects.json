@@ -16,5 +16,11 @@
     "description": "This app tracks which students have spares, and are spending them in the school library.\n Made for Northern Secondary School",
     "photo": "assets/projects/libraryspare.jpg",
     "file": "none"
+  },
+  {
+    "name": "Role Playing Game : Fred's Adventure",
+    "description": "A demo for my game, which follows Fred, a rabbit with the power to transform into a monster",
+    "photo": "assets/projects/rpg.jpg",
+    "file": "files/freds-adventure.jar"
   }
 ]
