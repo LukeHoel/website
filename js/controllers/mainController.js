@@ -50,10 +50,6 @@ function mainController() {
             }
         }
     }
-    vm.showPage = function showPage(isLast) {
-        if (isLast)
-            vm.showPage = true;
-    }
 }
 
 angular

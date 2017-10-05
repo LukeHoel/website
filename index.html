@@ -13,6 +13,11 @@
 
 <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+                $(document).ready(function() {
+                        debugger;
+                });
+        </script>
 </head>
 
 <body ng-cloak ng-app="hoelApp" ng-controller="mainController as vm">
@@ -71,7 +76,7 @@
         </div>
 
         <div ng-hide>
-                <img ng-hide ng-repeat="project in vm.json[1]" ng-init="vm.showPage($last)"ng-src="{{project.photo}}" style="position:fixed;left:0;top:0;width:0px;height:0px;"/>
+                <img ng-hide ng-repeat="project in vm.json[1]" ng-src="{{project.photo}}" style="position:fixed;left:0;top:0;width:0px;height:0px;"/>
         </div>
 </body>
 
