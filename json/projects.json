@@ -22,5 +22,11 @@
     "description": "A demo for my game, which follows Fred, a rabbit with the power to transform into a monster",
     "photo": "assets/projects/rpg.jpg",
     "file": "files/freds-adventure.jar"
+  },
+  {
+    "name": "Irvin's Adventure",
+    "description": "A runner game where you attack using keyboard controls, with a crazy giant rooster on a floating scooter as the final boss",
+    "photo": "assets/projects/irving.jpg",
+    "file": "files/irvings-adventure.jar"
   }
 ]
