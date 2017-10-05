@@ -1,7 +1,7 @@
 [
   {
     "name": "Class Tracker",
-  "description": "A class tracking app complete with calendar, events and color coded categories, using java awt drawing shapes, and a SQLITE datebase",
+  "description": "A class tracking app complete with calendar, events and color coded categories, using Java AWT for graphics, and a SQLITE datebase",
   "photo": "assets/projects/classtraker.jpg",
   "file" : "files/classtracker.jar"
   },
