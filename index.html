@@ -15,7 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body ng-cloak ng-app="hoelApp" ng-controller="mainController as vm">
+<body ng-cloak ng-app="hoelApp" ng-controller="mainController as vm" ng-init="vm.preloadImages();">
 
         <div>
                 <div id="sidebar" class="fixed sidebar col-xs-12 col-md-3" ng-class="{ 'hiddenSideBar': !vm.isNavbarOpen, 'toggleOn': vm.isNavbarOpen, 'toggleOff': !vm.isNavbarOpen, 'smallSidebar': !vm.isNavbarOpen, 'fullSidebar': vm.isNavbarOpen}"
