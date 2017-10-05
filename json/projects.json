@@ -19,14 +19,20 @@
   },
   {
     "name": "Fred's Adventure",
-    "description": "A demo for my game, which follows Fred, a rabbit with the power to transform into a monster",
+    "description": "A demo for my rpg, which follows Fred, a rabbit with the power to transform into a monster",
     "photo": "assets/projects/rpg.jpg",
     "file": "files/freds-adventure.jar"
   },
   {
-    "name": "Irvin's Adventure",
+    "name": "Irving's Adventure",
     "description": "A runner game where you attack using keyboard controls, with a crazy giant rooster on a floating scooter as the final boss",
     "photo": "assets/projects/irving.jpg",
     "file": "files/irvings-adventure.jar"
+  },
+  {
+    "name": "Little People",
+    "description": "A (slightly buggy) simulation, showing autonomous people gathering resources and building small villages",
+    "photo": "assets/projects/populate.jpg",
+    "file": "files/populate.jar"
   }
 ]
