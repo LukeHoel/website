@@ -14,7 +14,7 @@
                 <h2 ng-bind="project.name"/>                  
                 <img alt="Bootstrap Image Preview" ng-src="{{project.photo}}" class="img-responsive"/>
                 <p ng-bind="project.description"/>
-                <a style="text-align:center;"ng-hide="vm.isSmallScreen() || project.file == 'none'"target="_self" ng-href="{{project.file}}" download="{{project.file}}">Download File</a>
+                <a style="padding:10px;"ng-hide="vm.isSmallScreen() || project.file == 'none'"target="_self" ng-href="{{project.file}}" download="{{project.file}}">Download File</a>
             </div>
         </div>
     </div>
