@@ -1,14 +1,20 @@
 [
   {
     "name": "Class Tracker",
-  "description": "A class tracking app complete with calendar, events and color coded categories, using Java AWT for graphics, and a SQLITE datebase",
-  "photo": "assets/projects/classtraker.jpg",
-  "file" : "files/classtracker.jar"
+    "description": "A class tracking app complete with calendar, events and color coded categories, using Java AWT for graphics, and a SQLITE datebase",
+    "photo": "assets/projects/classtraker.jpg",
+    "file": "files/classtracker.jar"
   },
   {
     "name": "Evolution Algorithm",
-  "description": "Using a brute force method of evolution, this simulation \"learns\" to complete an obstacle course with no assumptions made about it. Of course, lacking proper intelligence, it can get stuck in places...",
-  "photo": "assets/projects/evolution.jpg",
-  "file" : "files/evolution.jar"
+    "description": "Using a brute force method of evolution, this simulation \"learns\" to complete an obstacle course with no assumptions made about it. Of course, lacking proper intelligence, it can get stuck in places...",
+    "photo": "assets/projects/evolution.jpg",
+    "file": "files/evolution.jar"
+  },
+  {
+    "name": "Library Spare System",
+    "description": "This app tracks which students have spares, and are spending them in the school library.\n Made for Northern Secondary School",
+    "photo": "assets/projects/libraryspare.jpg",
+    "file": "none"
   }
 ]
