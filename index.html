@@ -80,9 +80,16 @@
                 <div class="underlay" ng-click="vm.closeNav()"></div>
         </div>
 
-        <div >
-                <img ng-repeat="project in vm.json[1]" ng-src="{{project.photo}}" 
-                />
+        <div ng-hide>
+                <style>
+                        .hiddenAway{
+                                position:fixed;left:0;top:0;width:0px;height:0px;
+                        }
+                </style>
+                <img ng-hide ng-repeat="project in vm.json[1]" ng-src="{{project.photo}}" class="hiddenAway"/>
+                <img ng-hide src="assets/jim.svg" class="hiddenAway"/>
+                <img ng-hide src="assets/code.svg" class="hiddenAway"/>
+                <img ng-hide src="assets/brasov.svg" class="hiddenAway"/>
         </div>
 </body>
 
