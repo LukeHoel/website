@@ -13,12 +13,15 @@ h2 {
   text-align: center;
 }
 p {
-  color: #606060;
+  color: #413F3F;
   padding: 10px;
   padding-bottom: 0px;
 }
 img {
   border-radius: 20px;
+}
+.fa {
+  color: #414141;
 }
 .round {
   border-radius: 20px;
