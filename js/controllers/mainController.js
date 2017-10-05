@@ -47,14 +47,6 @@ function mainController() {
             });
         }
     }
-    vm.preloadImages = function preloadImages() {
-        $.getJSON("json/imagepaths.json", function (json) {
-            for (var i = 0; i < json.length; i++) {
-                var img=new Image();
-                img.src=json[i];
-            }
-        });
-    }
 }
 
 angular
