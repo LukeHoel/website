@@ -52,7 +52,7 @@
                                 }
                         </style>
                         <div style="margin-top: 30px;overflow:hidden;" ng-class="{ 'hiddenLink': !vm.isNavbarOpen, 'link': vm.isNavbarOpen}">
-                                <div ng-repeat="link in vm.links" ng-style="{'background-color':link.linkcolor}" ng-click="vm.setLink($event,link)" class="linkContainer col-xs-5"
+                                <div ng-repeat="link in vm.links" style="margin-bottom:20px;"ng-style="{'background-color':link.linkcolor}" ng-click="vm.setLink($event,link)" class="linkContainer col-xs-5"
                                         ng-class="{'border-left': $even,'border-right': $odd}">
                                         <div class="sidebarLink" ng-bind="link.name" />
                                         <div class="sidebarLink overlay"></div>
@@ -89,6 +89,7 @@
                         }
                 </style>
                 <img ng-hide ng-repeat="project in vm.json[1]" ng-src="{{project.photo}}" class="hiddenAway"/>
+                <img ng-hide ng-repeat="gallery in vm.json[2]" ng-src="{{gallery.svg}}" class="hiddenAway"/>
                 <img ng-hide src="assets/jim.svg" class="hiddenAway"/>
                 <img ng-hide src="assets/code.svg" class="hiddenAway"/>
                 <img ng-hide src="assets/brasov.svg" class="hiddenAway"/>

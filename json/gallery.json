@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Brasov",
+        "description": "The first of my vectorizing photos from around the world. This one is from Brasov, Romania.",
+        "svg": "assets/gallery/svg/brasovcropped.svg",
+        "png": "assets/gallery/png/brasov.png"
+    },
+    {
+        "name": "Falco Lombardi",
+        "description": "Fan art done for one of my favorite video games, Super Smash Brothers.",
+        "svg": "assets/gallery/svg/falco.svg",
+        "png": "assets/gallery/png/falco.png"
+    },
+    {
+        "name": "Asriel Dremurr",
+        "description": "Created in 2016, this is fan art for my (at the time) favourite game, Undertale",
+        "svg": "assets/gallery/svg/asriel.svg",
+        "png": "assets/gallery/png/asriel.png"
+    },
+    {
+        "name": "Shieka Tablet",
+        "description": "Created after the annoucement of the series' latest installment, this is fan art for the Legend of Zelda",
+        "svg": "assets/gallery/svg/shieka.svg",
+        "png": "assets/gallery/png/shieka.png"
+    }
+]
