@@ -14,11 +14,11 @@
 <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script>
-                $(document).ready(function() {
-                    var scope = angular.element($("#page")).scope();
-                    scope.$apply(function () {
-                        scope.vm.showPage = true;
-                    });
+                $(document).ready(function () {
+                        var scope = angular.element($("#page")).scope();
+                        scope.$apply(function () {
+                                scope.vm.showPage = true;
+                        });
                 });
         </script>
 </head>
@@ -37,19 +37,21 @@
                                 </div>
                         </div>
                         <style>
-                                .border-left{
+                                .border-left {
                                         border-radius: 20px;
-                                        float:left;
-                                        width:45%;
+                                        float: left;
+                                        width: 45%;
                                 }
-                                .border-right{
+
+                                .border-right {
                                         border-radius: 20px;
-                                        float:right;
-                                        width:45%;
+                                        float: right;
+                                        width: 45%;
                                 }
                         </style>
                         <div style="margin-top: 30px;overflow:hidden;" ng-class="{ 'hiddenLink': !vm.isNavbarOpen, 'link': vm.isNavbarOpen}">
-                                <div ng-repeat="link in vm.links" ng-style="{'background-color':link.linkcolor}" ng-click="vm.setLink($event,link)" class="linkContainer col-xs-5" ng-class="{'border-left': $even,'border-right': $odd}">
+                                <div ng-repeat="link in vm.links" ng-style="{'background-color':link.linkcolor}" ng-click="vm.setLink($event,link)" class="linkContainer col-xs-5"
+                                        ng-class="{'border-left': $even,'border-right': $odd}">
                                         <div class="sidebarLink" ng-bind="link.name" />
                                         <div class="sidebarLink overlay"></div>
                                 </div>
@@ -57,8 +59,8 @@
 
                 </div>
         </div>
-        <div ng-if="vm.showPage" class="container" ng-click="vm.closeNav()" style="margin-right:0;">
-                <div ng-show="vm.pageLoaded"class="mobileoffset float-left col-xs-12 col-md-8" ng-class="{'col-xs-offset-12': vm.isNavbarOpen, 'col-md-offset-3': vm.isNavbarOpen, 'navbarOut': vm.isNavbarOpen, 'navbarIn': !vm.isNavbarOpen}">
+        <div ng-if="vm.showPage"class="container" ng-click="vm.closeNav()" style="margin-right:0;">
+                <div ng-show="vm.pageLoaded" class="mobileoffset float-left col-xs-12 col-md-8" ng-class="{'col-xs-offset-12': vm.isNavbarOpen, 'col-md-offset-3': vm.isNavbarOpen, 'navbarOut': vm.isNavbarOpen, 'navbarIn': !vm.isNavbarOpen}">
                         <div class="fade-in" ng-include="vm.selectedLink.html" onload="vm.pageLoaded = true;vm.closeNavForMobile();" style="margin:auto;"></div>
 
                 </div>
@@ -78,8 +80,9 @@
                 <div class="underlay" ng-click="vm.closeNav()"></div>
         </div>
 
-        <div ng-hide>
-                <img ng-hide ng-repeat="project in vm.json[1]" ng-src="{{project.photo}}" style="position:fixed;left:0;top:0;width:0px;height:0px;"/>
+        <div >
+                <img ng-repeat="project in vm.json[1]" ng-src="{{project.photo}}" 
+                />
         </div>
 </body>
 
