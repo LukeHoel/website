@@ -12,15 +12,51 @@
         "png": "assets/gallery/png/falco.png"
     },
     {
-        "name": "Asriel Dremurr",
-        "description": "Created in 2016, this is fan art for my (at the time) favourite game, Undertale",
-        "svg": "assets/gallery/svg/asriel.svg",
-        "png": "assets/gallery/png/asriel.png"
+        "name": "All Might",
+        "description": "The no.1 Hero in the series, My Hero Academia, is based off of Silver Age comic heroes",
+        "svg": "assets/gallery/svg/allmight.svg",
+        "png": "assets/gallery/png/allmight.png"
     },
     {
-        "name": "Shieka Tablet",
-        "description": "Created after the annoucement of the series' latest installment, this is fan art for the Legend of Zelda",
-        "svg": "assets/gallery/svg/shieka.svg",
-        "png": "assets/gallery/png/shieka.png"
+        "name": "Cell",
+        "description": "This design is a coat of arms for Cell, a main villain from the Dragon Ball series",
+        "svg": "assets/gallery/svg/cell.svg",
+        "png": "assets/gallery/png/cell.png"
+    },
+    {
+        "name": "Solgaleo",
+        "description": "Made after the release of the latest installment of the Pokemon series",
+        "svg": "assets/gallery/svg/sun.svg",
+        "png": "assets/gallery/png/sun.png"
+    },
+    {
+        "name": "Lunaala",
+        "description": "Cross version counterpart to Solageo, Lunaala is also a Pokemon",
+        "svg": "assets/gallery/svg/lunaala.svg",
+        "png": "assets/gallery/png/lunaala.png"
+    },
+    {
+        "name": "Mewtwo",
+        "description": "A powerful Pokemon, this design was one of the first added",
+        "svg": "assets/gallery/svg/mewtwo.svg",
+        "png": "assets/gallery/png/mewtwo.png"
+    },
+    {
+        "name": "Bowser",
+        "description": "One of the earlier works in this collection, this is fanart of Bowser, the main antagonist from Mario",
+        "svg": "assets/gallery/svg/bowser.svg",
+        "png": "assets/gallery/png/bowser.png"
+    },
+    {
+        "name": "The Grinch",
+        "description": "You're a mean one, Mr.Grinch! You do make for a nice design though",
+        "svg": "assets/gallery/svg/grinch.svg",
+        "png": "assets/gallery/png/grinch.png"
+    },
+    {
+        "name": "SSJ2 Gohan",
+        "description": "Also from Dragon ball, this design depicts a major clash between two powerful characters",
+        "svg": "assets/gallery/svg/gohan.svg",
+        "png": "assets/gallery/png/gohan.png"
     }
 ]
