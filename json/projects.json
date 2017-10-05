@@ -18,7 +18,7 @@
     "file": "none"
   },
   {
-    "name": "Role Playing Game : Fred's Adventure",
+    "name": "Fred's Adventure",
     "description": "A demo for my game, which follows Fred, a rabbit with the power to transform into a monster",
     "photo": "assets/projects/rpg.jpg",
     "file": "files/freds-adventure.jar"
