@@ -88,9 +88,9 @@
                                 position:fixed;left:0;top:0;width:0px;height:0px;opacity: 0;
                         }
                 </style>
-                <img ng-hide ng-repeat="project in vm.json[1]" ng-src="{{project.photo}}" class="hiddenAway"/>
-                <img ng-hide ng-repeat="gallery in vm.json[2]" ng-src="{{gallery.svg}}" class="hiddenAway"/>
-                <img ng-hide ng-repeat="job in vm.json[3]" ng-src="{{job.svg}}" class="hiddenAway"/>
+                <img ng-hide ng-repeat="project in vm.getJson(1)" ng-src="{{project.photo}}" class="hiddenAway"/>
+                <img ng-hide ng-repeat="gallery in vm.getJson(2)" ng-src="{{gallery.svg}}" class="hiddenAway"/>
+                <img ng-hide ng-repeat="job in vm.getJson(3)" ng-src="{{job.svg}}" class="hiddenAway"/>
                 <img ng-hide src="assets/jim.svg" class="hiddenAway"/>
                 <img ng-hide src="assets/code.svg" class="hiddenAway"/>
                 <img ng-hide src="assets/brasov.svg" class="hiddenAway"/>
