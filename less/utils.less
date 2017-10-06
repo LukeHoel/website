@@ -6,7 +6,26 @@
     border-color: @border-color;
     border-width: 5px;
 }
-
+.gloworange:hover{
+    -webkit-box-shadow:0 0 20px @orange; 
+    -moz-box-shadow: 0 0 20px @orange; 
+    box-shadow:0 0 20px @orange;
+    transition:.5s all;
+    width:48%;
+}
+.glowred:hover{
+    -webkit-box-shadow:0 0 20px @red; 
+    -moz-box-shadow: 0 0 20px @red; 
+    box-shadow:0 0 20px @red;
+    transition:.5s all;
+    width:48%;
+}
+.glow{
+    -webkit-box-shadow:0 0 0px @bg-color; 
+    -moz-box-shadow: 0 0 00px @bg-color; 
+    box-shadow:0 0 00px @bg-color;
+    transition:.5s all;
+}
 .fade-slow{animation:opac .5s}@keyframes opac{from{opacity:1} to{opacity:0}}
 .fade-out{animation:opac .2s}@keyframes opac{from{opacity:1} to{opacity:0}}
 .fade-in{animation:opac .2s}@keyframes opac{from{opacity:0} to{opacity:1}}

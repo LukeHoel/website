@@ -12,9 +12,11 @@ function mainController() {
     }
 
     vm.links = [
-        { name: "Home", html: "html/home.html", jsonLocation: "none", linkcolor: "#53B3CB" },
+        { name: "Home", html: "html/home.html", jsonLocation:"none", linkcolor: "#53B3CB" },
         { name: "Projects", html: "html/projects.html", jsonLocation: "json/projects.json", linkcolor: "#F9C22E" },
-        { name: "Gallery", html: "html/gallery.html", jsonLocation: "json/gallery.json", linkcolor: "#F15946"}
+        { name: "Gallery", html: "html/gallery.html", jsonLocation: "json/gallery.json", linkcolor: "#F15946"},
+        { name: "Professional", html: "html/professional.html", jsonLocation: "json/experience.json", linkcolor: "#13BF63"}
+  
     ]
     vm.selectedLink = vm.links[0];
     vm.setLink = function setLink($event, link) {

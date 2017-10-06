@@ -11,7 +11,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6" ng-repeat="project in vm.json[1]">
-                <h2 ng-bind="project.name"/>                  
+                <h2 ng-bind="project.name" class="whitetext"/>                  
                 <img ng-src="{{project.photo}}" class="img-responsive"/>
                 <p ng-bind="project.description"/>
                 <a style="padding:10px;"ng-hide="vm.isSmallScreen() || project.file == 'none'"target="_self" ng-href="{{project.file}}" download="{{project.name}}">Download File</a>

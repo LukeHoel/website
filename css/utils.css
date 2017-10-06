@@ -9,6 +9,26 @@
   border-color: white;
   border-width: 5px;
 }
+.gloworange:hover {
+  -webkit-box-shadow: 0 0 20px #F15946;
+  -moz-box-shadow: 0 0 20px #F15946;
+  box-shadow: 0 0 20px #F15946;
+  transition: .5s all;
+  width: 48%;
+}
+.glowred:hover {
+  -webkit-box-shadow: 0 0 20px #77f6ff;
+  -moz-box-shadow: 0 0 20px #77f6ff;
+  box-shadow: 0 0 20px #77f6ff;
+  transition: .5s all;
+  width: 48%;
+}
+.glow {
+  -webkit-box-shadow: 0 0 0px #53B3CB;
+  -moz-box-shadow: 0 0 0px #53B3CB;
+  box-shadow: 0 0 0px #53B3CB;
+  transition: .5s all;
+}
 .fade-slow {
   animation: opac 0.5s;
 }

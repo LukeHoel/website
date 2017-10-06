@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+</head>
+
+<body style="margin:auto;">
+    <h1>Professional</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" ng-repeat="job in vm.json[3]">
+                <h2 ng-bind="job.name"/>
+                <p ng-bind="job.time" style="text-align:center;"/>                  
+                <img ng-src="{{job.svg}}" class="img-responsive" style="background-color:white;padding:10px;"/>
+                <p ng-bind="job.description"/>               
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
