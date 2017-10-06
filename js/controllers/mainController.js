@@ -16,7 +16,6 @@ function mainController() {
         { name: "Projects", html: "html/projects.html", jsonLocation: "json/projects.json", linkcolor: "#F9C22E" , bgimage: "url('assets/backgroundcode.svg')"},
         { name: "Gallery", html: "html/gallery.html", jsonLocation: "json/gallery.json", linkcolor: "#F15946" , bgimage: "url('assets/backgroundart.svg')"},
         { name: "Professional", html: "html/professional.html", jsonLocation: "json/experience.json", linkcolor: "#13BF63" , bgimage: "url('assets/background.svg')"}
-  
     ]
     vm.selectedLink = vm.links[0];
     vm.setLink = function setLink($event, link) {
