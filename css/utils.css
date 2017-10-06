@@ -24,9 +24,9 @@
   width: 48%;
 }
 .glow {
-  -webkit-box-shadow: 0 0 0px #53B3CB;
-  -moz-box-shadow: 0 0 0px #53B3CB;
-  box-shadow: 0 0 0px #53B3CB;
+  -webkit-box-shadow: 0 0 0px #45C1E0;
+  -moz-box-shadow: 0 0 0px #45C1E0;
+  box-shadow: 0 0 0px #45C1E0;
   transition: .5s all;
 }
 .fade-slow {
@@ -60,5 +60,16 @@
   }
   to {
     opacity: 1;
+  }
+}
+.slide {
+  animation: slide 20s linear infinite;
+}
+@keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -400px 0;
   }
 }

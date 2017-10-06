@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="401px"
+	 height="400.87px" viewBox="0 0 401 400.87" enable-background="new 0 0 401 400.87" xml:space="preserve">
+<g id="Layer_2" display="none">
+	
+		<text transform="matrix(0.9465 0.3228 -0.3228 0.9465 278.5137 104.3145)" display="inline" opacity="0.1" font-family="'MyriadPro-Regular'" font-size="31.7793">{</text>
+	
+		<text transform="matrix(1 0 0 1 343.667 196.9282)" display="inline" opacity="0.1" font-family="'MyriadPro-Regular'" font-size="24">.</text>
+	
+		<text transform="matrix(0.7681 -0.6403 0.6403 0.7681 209.3008 312.4185)" display="inline" opacity="0.1" font-family="'MyriadPro-Regular'" font-size="24">(</text>
+	
+		<text transform="matrix(1 0 0 1 56.7378 328.8701)" display="inline" opacity="0.1" font-family="'MyriadPro-Regular'" font-size="24">@</text>
+	
+		<text transform="matrix(0.9034 -0.4288 0.4288 0.9034 187.0386 65.9194)" display="inline" opacity="0.1" font-family="'MyriadPro-Regular'" font-size="24">|</text>
+	
+		<text transform="matrix(0.9397 -0.342 0.342 0.9397 85.8486 132.3789)" display="inline" opacity="0.1" font-family="'MyriadPro-Regular'" font-size="33.9305">^</text>
+	<rect x="2" display="inline" fill="none" width="399" height="400.87"/>
+</g>
+<g id="Layer_3">
+	<g opacity="0.1">
+		<circle fill="none" stroke="#000000" stroke-width="1.1008" stroke-miterlimit="10" cx="67.051" cy="322.284" r="8.317"/>
+		<path fill="none" stroke="#000000" stroke-width="1.1008" stroke-miterlimit="10" d="M68.749,324.285
+			c2.075-0.18,4.33-0.758,6.619-2.001"/>
+		<path fill="none" stroke="#000000" stroke-width="1.1008" stroke-miterlimit="10" d="M58.733,322.284c0,0,2.689,1.549,6.609,1.964
+			"/>
+		<circle fill="none" stroke="#000000" stroke-width="1.1008" stroke-miterlimit="10" cx="67.051" cy="324.404" r="1.712"/>
+	</g>
+	
+		<circle opacity="0.1" fill="none" stroke="#000000" stroke-width="1.1008" stroke-miterlimit="10" cx="346.889" cy="196.928" r="8.5"/>
+	<polygon opacity="0.1" fill="none" stroke="#000000" stroke-miterlimit="10" points="346.889,194.451 347.694,196.082 
+		349.494,196.343 348.191,197.613 348.499,199.406 346.889,198.56 345.279,199.406 345.586,197.613 344.284,196.343 
+		346.083,196.082 	"/>
+	<polygon opacity="0.1" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="82.323,113.667 
+		88.833,109.909 95.343,113.667 95.343,121.184 88.833,124.942 82.323,121.184 	"/>
+	<path opacity="0.1" fill="none" stroke="#000000" stroke-width="0.8841" stroke-miterlimit="10" d="M283.765,113.983l-1.991-3.651
+		l-3.363,1.833C278.411,112.165,280.142,115.958,283.765,113.983z"/>
+	
+		<rect x="278.765" y="105.44" transform="matrix(-0.9593 -0.2824 0.2824 -0.9593 524.1428 289.5649)" opacity="0.1" fill="none" stroke="#000000" stroke-width="0.8841" stroke-miterlimit="10" width="8.345" height="3.144"/>
+	<polygon opacity="0.1" fill="none" stroke="#000000" stroke-width="0.8841" stroke-miterlimit="10" points="287.179,93.773 
+		283.471,95.795 280.748,102.909 283.287,103.255 284.567,99.448 285.966,98.114 286.268,99.899 284.896,103.744 287.084,104.901 
+		289.201,97.482 	"/>
+	<path opacity="0.1" fill="none" stroke="#000000" stroke-width="1.0995" stroke-miterlimit="10" d="M201.731,300.778
+		c0.59,2.606,7.56,7.559,7.56,7.559s6.867-4.978,7.559-7.559c0.544-2.03-2.611-9.758-7.559-3.679
+		C204.755,291.02,201.268,298.728,201.731,300.778z"/>
+	<text transform="matrix(1 0 0 1 103.5947 272.334)" opacity="0.1" font-family="'MyriadPro-Regular'" font-size="24">.</text>
+	<g opacity="0.1">
+		<circle fill="none" stroke="#000000" stroke-width="1.1008" stroke-miterlimit="10" cx="190.416" cy="63.404" r="8.317"/>
+		<path fill="none" stroke="#000000" stroke-width="1.1008" stroke-miterlimit="10" d="M191.246,65.894
+			c1.992,0.607,4.3,0.911,6.888,0.611"/>
+		<path fill="none" stroke="#000000" stroke-width="1.1008" stroke-miterlimit="10" d="M182.699,60.303c0,0,1.918,2.44,5.4,4.287"/>
+		<circle fill="none" stroke="#000000" stroke-width="1.1008" stroke-miterlimit="10" cx="189.626" cy="65.371" r="1.712"/>
+	</g>
+</g>
+</svg>
