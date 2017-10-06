@@ -12,10 +12,10 @@ function mainController() {
     }
 
     vm.links = [
-        { name: "Home", html: "html/home.html", jsonLocation:"none", linkcolor: "#53B3CB" , bgimage: "url('assets/background.svg')"},
-        { name: "Projects", html: "html/projects.html", jsonLocation: "json/projects.json", linkcolor: "#F9C22E" , bgimage: "url('assets/backgroundcode.svg')"},
-        { name: "Gallery", html: "html/gallery.html", jsonLocation: "json/gallery.json", linkcolor: "#F15946" , bgimage: "url('assets/backgroundart.svg')"},
-        { name: "Professional", html: "html/professional.html", jsonLocation: "json/experience.json", linkcolor: "#13BF63" , bgimage: "url('assets/background.svg')"}
+        { name: "Home", html: "html/home.html", jsonLocation: "none", linkcolor: "#53B3CB", bgimage: "url('assets/background.svg')" },
+        { name: "Projects", html: "html/projects.html", jsonLocation: "json/projects.json", linkcolor: "#F9C22E", bgimage: "url('assets/backgroundcode.svg')" },
+        { name: "Gallery", html: "html/gallery.html", jsonLocation: "json/gallery.json", linkcolor: "#F15946", bgimage: "url('assets/backgroundart.svg')" },
+        { name: "Professional", html: "html/professional.html", jsonLocation: "json/experience.json", linkcolor: "#13BF63", bgimage: "url('assets/background.svg')" }
     ]
     vm.selectedLink = vm.links[0];
     vm.setLink = function setLink($event, link) {
@@ -50,6 +50,28 @@ function mainController() {
                     });
                 });
             }
+        }
+    }
+    vm.getJson = function getJson(index) {
+        switch (index) {
+            case (1):
+                for (var i = 1; i < vm.json.length; i++) {
+                    if (vm.json[i][0].name == "Class Tracker")
+                        return vm.json[i];
+                }
+                break;
+            case (2):
+                for (var i = 1; i < vm.json.length; i++) {
+                    if (vm.json[i][0].name == "Brasov")
+                        return vm.json[i];
+                }
+                break;
+            case (3):
+                for (var i = 1; i < vm.json.length; i++) {
+                    if (vm.json[i][0].name == "Tyler Technologies, Appraisal & Tax Division")
+                        return vm.json[i];
+                }
+                break;
         }
     }
 }
