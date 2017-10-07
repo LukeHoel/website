@@ -13,7 +13,7 @@
                 <h2 ng-bind="job.name"/>
                 <p ng-bind="job.time" style="text-align:center;"/>                  
                 <img ng-src="{{job.svg}}" class="img-responsive" style="background-color:white;padding:10px;"/>
-                <p style="text-align:center;" ng-bind="job.description"/> 
+                <p ng-bind="job.description"/> 
                 <h2 style="text-align:left;">Languages & Frameworks</h2>
                 <p ng-repeat="tech in job.tech" ng-bind="'&#9679; ' + tech"></p>           
             </div>
