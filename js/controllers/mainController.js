@@ -56,7 +56,7 @@ function mainController() {
         switch (index) {
             case (1):
                 for (var i = 1; i < vm.json.length; i++) {
-                    if (vm.json[i][0].name == "Class Tracker")
+                    if (vm.json[i][vm.json[i].length-1].name == "Little People")
                         return vm.json[i];
                 }
                 break;

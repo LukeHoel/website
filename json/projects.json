@@ -1,38 +1,51 @@
 [
   {
+    "name": "Little words",
+    "description": "Using Create.js and Hammer.js, this is a solar system simulator, each planet has randomized topography, and land features",
+    "photo": "assets/projects/littleworlds.jpg",
+    "file": "none",
+    "link":"http://worlds.lukehoel.com"
+  },
+  {
     "name": "Class Tracker",
-    "description": "A class tracking app complete with calendar, events and color coded categories, using Java AWT for graphics, and a SQLITE datebase",
+    "description": "A class tracking app complete with calendar, events and color coded categories, using Java AWT for graphics, and a SQLITE Database",
     "photo": "assets/projects/classtraker.jpg",
-    "file": "files/classtracker.jar"
+    "file": "files/classtracker.jar",
+    "link": "none"
   },
   {
     "name": "Evolution Algorithm",
-    "description": "Using a brute force method of evolution, this simulation \"learns\" to complete an obstacle course with no assumptions made about it. Of course, lacking proper intelligence, it can get stuck in places...",
+    "description": "Using a brute force method of evolution, this simulation \"learns\" to complete an obstacle course with no assumptions made about it.",
     "photo": "assets/projects/evolution.jpg",
-    "file": "files/evolution.jar"
+    "file": "files/evolution.jar",
+    "link": "none"
   },
   {
     "name": "Library Spare System",
-    "description": "This app tracks which students have spares, and are spending them in the school library.\n Made for Northern Secondary School",
+    "description": "This app tracks which students have spares, and are spending them in the school library.\n Made for Northern Secondary School, this was created with Java AWT and SQLite",
     "photo": "assets/projects/libraryspare.jpg",
-    "file": "none"
+    "file": "none",
+    "link": "none"
   },
   {
     "name": "Fred's Adventure",
     "description": "A demo for my rpg, which follows Fred, a rabbit with the power to transform into a monster",
     "photo": "assets/projects/rpg.jpg",
-    "file": "files/freds-adventure.jar"
+    "file": "files/freds-adventure.jar",
+    "link": "none"
   },
   {
     "name": "Irving's Adventure",
     "description": "A runner game where you attack using keyboard controls, with a crazy giant rooster on a floating scooter as the final boss",
     "photo": "assets/projects/irving.jpg",
-    "file": "files/irvings-adventure.jar"
+    "file": "files/irvings-adventure.jar",
+    "link": "none"
   },
   {
     "name": "Little People",
     "description": "A (slightly buggy) simulation, showing autonomous people gathering resources and building small villages",
     "photo": "assets/projects/populate.jpg",
-    "file": "files/populate.jar"
+    "file": "files/populate.jar",
+    "link": "none"
   }
 ]
