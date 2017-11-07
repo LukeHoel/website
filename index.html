@@ -28,7 +28,7 @@
 <body ng-cloak class="slide" style="background-repeat: repeat;"ng-style="{'background-image':vm.selectedLink.bgimage}">
 
         <div id="page" ng-init="vm.getPageData(vm);">
-                <div id="sidebar" class="fixed sidebar col-xs-12 col-md-3" ng-class="{ 'hiddenSideBar': !vm.isNavbarOpen, 'toggleOn': vm.isNavbarOpen, 'toggleOff': !vm.isNavbarOpen, 'smallSidebar': !vm.isNavbarOpen, 'fullSidebar': vm.isNavbarOpen}"
+                <div style="cursor: pointer"id="sidebar" class="fixed sidebar col-xs-12 col-md-3" ng-class="{ 'hiddenSideBar': !vm.isNavbarOpen, 'toggleOn': vm.isNavbarOpen, 'toggleOff': !vm.isNavbarOpen, 'smallSidebar': !vm.isNavbarOpen, 'fullSidebar': vm.isNavbarOpen}"
                         ng-click="vm.isNavbarOpen = ! vm.isNavbarOpen">
                         <div>
                                 <!-- <div class="glyphicon glyphicon-menu-hamburger"/> -->
