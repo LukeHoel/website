@@ -29,12 +29,16 @@
 .fade-slow{animation:opac .5s}@keyframes opac{from{opacity:1} to{opacity:0}}
 .fade-out{animation:opac .2s}@keyframes opac{from{opacity:1} to{opacity:0}}
 .fade-in{animation:opac .2s}@keyframes opac{from{opacity:0} to{opacity:1}}
-// .slide{
-//     animation: slide 60s linear infinite;
-// }
+.slide{
+    animation: slide 60s linear infinite;
+    transition-property: background-position;
+    transition: 0s linear;
+}
 @media screen and (min-width: 993px) {
 .slide{
-     animation: slide 60s linear infinite;
+     animation: slide 20s linear infinite;
+     transition-property: background-position;
+     transition: 0s linear;
 }
 }
 @keyframes slide {
