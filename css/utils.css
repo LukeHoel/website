@@ -62,11 +62,6 @@
     opacity: 1;
   }
 }
-.slide {
-  animation: slide 60s linear infinite;
-  transition-property: background-position;
-  transition: 0s linear;
-}
 @media screen and (min-width: 993px) {
   .slide {
     animation: slide 20s linear infinite;
