@@ -1,5 +1,12 @@
 [
   {
+    "name": "Pokédex on IOS",
+    "description": "Using thousands of images from the web as training data, the pokedex still needs more data. Where's Ash when you need him?",
+    "photo": "assets/projects/butterfree.png",
+    "file": "none",
+    "link":"https://www.linkedin.com/pulse/using-tensflowflow-classify-pokemon-ios-luke-hoel/"
+  },
+  {
     "name": "Little worlds",
     "description": "Using Create.js and Hammer.js, this is a solar system simulator, each planet has randomized topography, and land features",
     "photo": "assets/projects/littleworlds.jpg",
