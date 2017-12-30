@@ -62,7 +62,7 @@ function mainController() {
                 break;
             case (2):
                 for (var i = 1; i < vm.json.length; i++) {
-                    if (vm.json[i][0].name == "Brasov")
+                    if (vm.json[i][0].name == "Redbubble Profile")
                         return vm.json[i];
                 }
                 break;

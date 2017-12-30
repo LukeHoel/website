@@ -11,10 +11,11 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6" ng-repeat="project in vm.getJson(2)">
-                <h2 ng-bind="project.name" class="whitetext"/>                  
-                <img ng-src="{{project.svg}}" class="img-responsive"/>
+                <h2 ng-bind="project.name" class="whitetext" />                  
+                <img ng-src="{{project.svg}}" class="img-responsive">
                 <p ng-bind="project.description"/>
-                <a style="padding:10px;"ng-hide="vm.isSmallScreen()"target="_self" ng-href="{{project.png}}" download="{{project.name}}" name="file.png">Download File</a>
+                <a ng-if="project.link == null" style="padding:10px;" ng-hide="vm.isSmallScreen()"target="_self" ng-href="{{project.png}}" download="{{project.name}}" name="file.png">Download File</a>
+                <a ng-hide="project.link == null" style="padding:10px;" target="_blank" ng-href="{{project.link}}">Visit</a>               
             </div>
         </div>
     </div>
