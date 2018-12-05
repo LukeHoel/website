@@ -21,6 +21,13 @@
     "link": "http://worlds.lukehoel.com"
   },
   {
+    "name": "Evolution Algorithm",
+    "description": "Using a brute force method of evolution, this simulation \"learns\" to complete an obstacle course with no assumptions made about it.",
+    "photo": "assets/projects/evolution.jpg",
+    "file": "files/evolution.jar",
+    "link": "none"
+  },
+  {
     "name": "Pokédex on IOS",
     "description": "Using thousands of images from the web as training data for a tensorflow image classifier, it can recognize around 20 of the original 151 Pokemon",
     "photo": "assets/projects/butterfree.jpg",
@@ -32,13 +39,6 @@
     "description": "A class tracking app complete with calendar, events and color coded categories, using Java AWT for graphics, and a SQLITE Database",
     "photo": "assets/projects/classtraker.jpg",
     "file": "files/classtracker.jar",
-    "link": "none"
-  },
-  {
-    "name": "Evolution Algorithm",
-    "description": "Using a brute force method of evolution, this simulation \"learns\" to complete an obstacle course with no assumptions made about it.",
-    "photo": "assets/projects/evolution.jpg",
-    "file": "files/evolution.jar",
     "link": "none"
   },
   {
