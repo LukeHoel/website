@@ -1,10 +1,10 @@
-[
+﻿[
   {
     "name": "ReadyOS",
     "description": "Vanilla Javascript library creating unix-lite file system, allowing for extension with extra commands",
     "photo": "assets/projects/readyos.jpg",
     "file": "none",
-    "link": "https://console.readyos.ca/"
+    "link": "https://readyos.ca/"
   },
   {
     "name": "Widgetify",
