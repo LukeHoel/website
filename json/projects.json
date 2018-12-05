@@ -1,17 +1,31 @@
 [
   {
-    "name": "Pokédex on IOS",
-    "description": "Using thousands of images from the web as training data for a tensorflow image classifier, it can recognize around 20 of the original 151 Pokemon",
-    "photo": "assets/projects/butterfree.jpg",
+    "name": "ReadyOS",
+    "description": "Vanilla Javascript library creating unix-lite file system, allowing for extension with extra commands",
+    "photo": "assets/projects/readyos.jpg",
     "file": "none",
-    "link":"https://www.linkedin.com/pulse/using-tensflowflow-classify-pokemon-ios-luke-hoel/"
+    "link": "https://console.readyos.ca/"
+  },
+  {
+    "name": "Widgetify",
+    "description": "Compile popular sites into sets, which you can save in one place, tied to your google account",
+    "photo": "assets/projects/widgetify.jpg",
+    "file": "none",
+    "link": "https://widgetify.me/"
   },
   {
     "name": "Little worlds",
     "description": "Using Create.js and Hammer.js, this is a solar system simulator, each planet has randomized topography, and land features",
     "photo": "assets/projects/littleworlds.jpg",
     "file": "none",
-    "link":"http://worlds.lukehoel.com"
+    "link": "http://worlds.lukehoel.com"
+  },
+  {
+    "name": "Pokédex on IOS",
+    "description": "Using thousands of images from the web as training data for a tensorflow image classifier, it can recognize around 20 of the original 151 Pokemon",
+    "photo": "assets/projects/butterfree.jpg",
+    "file": "none",
+    "link": "https://www.linkedin.com/pulse/using-tensflowflow-classify-pokemon-ios-luke-hoel/"
   },
   {
     "name": "Class Tracker",
