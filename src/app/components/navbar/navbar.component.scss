@@ -1,0 +1,34 @@
+$darker-bg-color: #212121;
+$lighter-bg-color: #424242;
+$text-color: white;
+$icon-color: #ef5350;
+mat-toolbar {
+  color: $text-color;
+  background-color: $darker-bg-color;
+  height: 48px;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+}
+mat-icon {
+  color: $icon-color;
+}
+span {
+  margin-left: 10px;
+  font-family: "Pacifico", cursive;
+}
+mat-drawer-container {
+  height: calc(100% - 48px);
+  background-color: $lighter-bg-color;
+  mat-drawer {
+    color: $text-color;
+    background-color: $lighter-bg-color;
+  }
+  mat-drawer-content {
+    color: $text-color;
+    display: flex;
+    justify-content: center;
+    div {
+      width: 300px;
+    }
+  }
+}
