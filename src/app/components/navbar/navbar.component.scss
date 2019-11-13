@@ -1,7 +1,4 @@
-$darker-bg-color: #212121;
-$lighter-bg-color: #424242;
-$text-color: white;
-$icon-color: #ef5350;
+@import '../../variables.scss';
 mat-toolbar {
   color: $text-color;
   background-color: $darker-bg-color;
@@ -20,11 +17,9 @@ mat-drawer-container {
   height: calc(100% - 48px);
   background-color: $lighter-bg-color;
   mat-drawer {
-    color: $text-color;
     background-color: $lighter-bg-color;
   }
   mat-drawer-content {
-    color: $text-color;
     display: flex;
     justify-content: center;
     div {
