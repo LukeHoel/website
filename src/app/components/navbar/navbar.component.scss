@@ -5,6 +5,7 @@ mat-toolbar {
   height: 48px;
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
     0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+    z-index: 1;
 }
 mat-icon {
   color: $icon-color;
@@ -15,21 +16,13 @@ span {
 }
 mat-drawer-container {
   height: calc(100% - 48px);
-  background-color: $light-bg-color;
   mat-drawer {
     background-color: $light-bg-color;
   }
   mat-drawer-content {
 
-    display: flex;
-    justify-content: center;
-    .content {
-      z-index: 1;
-      width: 800px;
-    }
   }
   .bg{
-    z-index: 0;
     background-image: url("../../../assets/images/falco.jpg");
     filter: blur(8px);
     -webkit-filter: blur(8px);
