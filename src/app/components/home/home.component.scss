@@ -1,18 +1,21 @@
 @import "../../variables.scss";
-app-logo {
-  margin: 20px;
-}
-.intro {
-  font-size: 25px;
-  text-align: center;
-  color: $text-color;
-}
 .main{
-  background: linear-gradient(#47b, #49f5);
-  background-size: 100% 500px;
+  background-color: #1E88E5;
+  background-image: url('../../../assets/images/bg.svg');
   background-attachment: fixed;
+  background-size: auto 600px;
+  background-repeat: repeat;
+  animation: slide 20s linear infinite;
+  transition-property: background-position;
+  transition: 0s linear;
 }
-.first {
+@keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -400px -400px;
+  }
 }
 .seperator {
   margin-top: 20px;
@@ -36,4 +39,5 @@ $bg-color: #fafafa;
 .second{
   background-color: $bg-color;
   height: 300px;
+  text-align: left;
 }

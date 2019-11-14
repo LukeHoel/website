@@ -14,6 +14,9 @@ import { HomeComponent } from "./components/home/home.component";
 import { MatListModule } from "@angular/material/list";
 import { ProjectsComponent } from './components/projects/projects.component';
 import { LogoComponent } from './components/home/logo/logo.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { IntroSectionComponent } from './components/home/intro-section/intro-section.component';
+import { ProjectsSectionComponent } from './components/home/projects-section/projects-section.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +24,9 @@ import { LogoComponent } from './components/home/logo/logo.component';
     SidenavComponent,
     HomeComponent,
     ProjectsComponent,
-    LogoComponent
+    LogoComponent,
+    IntroSectionComponent,
+    ProjectsSectionComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +36,8 @@ import { LogoComponent } from './components/home/logo/logo.component';
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
