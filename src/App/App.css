@@ -1,0 +1,63 @@
+.lightingMan{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+.lightingMan .material-icons{
+    color: rgba(255,255,255,.8);
+    font-size: 100px;
+    z-index: 1;
+    animation: float 1s ease-in-out infinite alternate -.2s;
+}
+.lightingMan .lightningBall{
+    position: absolute;
+    top: -20px;
+    width: 150px;
+    height: 150px;
+    z-index: 0;
+    background-color: #FF4081;
+    animation: bubble .5s ease infinite alternate-reverse, rotate 4s linear infinite, float 1s ease-in-out infinite alternate;
+    filter: blur(3px);
+}
+
+@keyframes float{
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(0,-20px);
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    0%{
+        transform: rotate(360deg);
+
+    }
+}
+
+@keyframes bubble{
+    0%{
+        border-top-left-radius: 40%;
+        border-top-right-radius: 45%;
+        border-bottom-right-radius: 35%;
+        border-bottom-left-radius: 50%;
+    }
+    50%{
+        border-top-left-radius: 35%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 45%;
+        border-bottom-right-radius: 45%;
+    }
+    100%{
+        border-top-left-radius: 45%;
+        border-top-right-radius: 35%;
+        border-bottom-left-radius: 45%;
+        border-bottom-right-radius: 60%;
+
+    }
+}
