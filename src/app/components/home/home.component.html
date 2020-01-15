@@ -8,7 +8,20 @@
       </div>
     </div>
     <div class="second">
-      <app-projects-section></app-projects-section>
+      <h2>Here's what I've been working on</h2>
+      <div class="githubReposWrapper">
+        <div class="githubRepos">
+          <ng-container *ngIf="!selectedGithubRepo">
+            <app-github-repo *ngFor="let repo of githubRepos" (click)="selectedGithubRepo = repo" [githubRepo]="repo">
+            </app-github-repo>
+          </ng-container>
+          <app-github-repo-detail *ngIf="selectedGithubRepo" [githubRepo]="selectedGithubRepo"
+            (back)="selectedGithubRepo=null">
+          </app-github-repo-detail>
+
+        </div>
+      </div>
+
     </div>
   </div>
 </div>

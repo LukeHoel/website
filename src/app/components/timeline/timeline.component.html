@@ -1,0 +1,10 @@
+<div class='timeline'>
+    <ng-container *ngFor="let yearToShow of yearsToShow">
+        <div class="dataPoint" [class.selected]="selectedYear === yearToShow">
+            <span class="dot" (click)="selectedYear = yearToShow">
+                <span class="year noselect">{{yearToShow}}</span>
+            </span>
+            <div class="line"></div>
+        </div>
+    </ng-container>
+</div>

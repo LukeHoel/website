@@ -1,0 +1,8 @@
+<div class="githubRepoDetail">
+    <a [href]="githubRepo.html_url" target="_blank">{{githubRepo.html_url}}</a>
+    <div [innerHtml]="markDown"></div>
+    <button class="backButton" mat-button (click)="back.emit({})">
+        Back
+    </button>
+
+</div>
