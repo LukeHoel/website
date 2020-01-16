@@ -1,9 +1,17 @@
 a{
     color: black;
 }
+span{
+    display: flex;
+}
+app-language{
+    margin-right: 5px;
+}
 .githubRepoDetail{
     width: 800px;
+    display: flex;
+    flex-direction:column;
 }
 .backButton{
-    float: right;
+    align-self: flex-end;
 }

@@ -1,0 +1,7 @@
+<span [ngSwitch]="language" [matTooltip]="language">
+    <i class="Language JavaScript" *ngSwitchCase="'JavaScript'"></i>
+    <i class="Language TypeScript" *ngSwitchCase="'TypeScript'"></i>
+    <i class="Language CPlusPlus" *ngSwitchCase="'C++'"></i>
+    <i class="fas fa-terminal Language Shell" *ngSwitchCase="'Shell'"></i>
+    <i class=" fas fa-code Language Generic" *ngSwitchDefault></i>
+</span>

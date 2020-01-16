@@ -1,0 +1,57 @@
+.Language{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #212121;
+    &:after{
+        position: absolute;
+        font-size: 9px;
+        font-style: normal;
+        font-weight: bold;
+        color: white;
+    }
+}
+.JavaScript,.TypeScript{
+    &:after{
+        right: 2px;
+        bottom: 1px;
+    }
+}
+.JavaScript{
+    background-color: #F4511E;
+    &:after{
+        content: 'JS';
+    }
+
+}
+.TypeScript{
+    background-color: #0D47A1;
+    &:after{
+        content: 'TS';
+    }
+}
+.CPlusPlus{
+    background-color: #1E88E5;
+    &:after{
+        content: 'C++';
+        top: 5px;
+        left: 3px;
+    }
+}
+.Shell{
+    color: white;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Generic{
+    background-color: #AD1457;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
