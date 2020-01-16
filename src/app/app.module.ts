@@ -17,6 +17,15 @@ import { LogoComponent } from './components/home/logo/logo.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { IntroSectionComponent } from './components/home/intro-section/intro-section.component';
 import { ProjectsSectionComponent } from './components/home/projects-section/projects-section.component';
+import { TimelineComponent } from './components/timeline/timeline.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatRippleModule } from '@angular/material/core';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatCardModule } from '@angular/material/card';
+import { GithubRepoComponent } from './components/github-repo/github-repo.component';
+import { GithubRepoDetailComponent } from './components/github-repo-detail/github-repo-detail.component';
+import { LanguageComponent } from './components/language/language.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,10 +35,15 @@ import { ProjectsSectionComponent } from './components/home/projects-section/pro
     ProjectsComponent,
     LogoComponent,
     IntroSectionComponent,
-    ProjectsSectionComponent
+    ProjectsSectionComponent,
+    TimelineComponent,
+    GithubRepoComponent,
+    GithubRepoDetailComponent,
+    LanguageComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
@@ -37,7 +51,10 @@ import { ProjectsSectionComponent } from './components/home/projects-section/pro
     MatButtonModule,
     MatSidenavModule,
     MatListModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatRippleModule,
+    MatTooltipModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
