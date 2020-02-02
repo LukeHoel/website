@@ -1,8 +1,8 @@
 import { Component, OnInit, Input, Output, EventEmitter, Sanitizer } from '@angular/core';
-import { GithubRepo } from 'src/app/models/timeline-item';
+import { GithubRepo } from 'src/app/home/models/github-repo';
 import * as marked from 'marked';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { GithubReposService } from 'src/app/services/github-repos.service';
+import { GithubReposService } from 'src/app/home/services/github-repos.service';
 @Component({
   selector: 'app-github-repo-detail',
   templateUrl: './github-repo-detail.component.html',

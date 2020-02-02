@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { GithubRepo } from 'src/app/models/timeline-item';
+import { GithubRepo } from 'src/app/home/models/github-repo';
 
 @Component({
   selector: 'app-github-repo',

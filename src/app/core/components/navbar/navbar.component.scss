@@ -1,14 +1,13 @@
-@import '../../variables.scss';
 mat-toolbar {
-  color: $text-color;
-  background-color: $dark-bg-color;
+  color: white;
+  background-color: #212121;
   height: 48px;
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
     0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
     z-index: 1;
 }
 mat-icon {
-  color: $icon-color;
+  color: #ef5350;
 }
 span {
   margin-left: 10px;
@@ -17,13 +16,13 @@ span {
 mat-drawer-container {
   height: calc(100% - 48px);
   mat-drawer {
-    background-color: $light-bg-color;
+    background-color: #424242;
   }
   mat-drawer-content {
 
   }
   .bg{
-    background-image: url("../../../assets/images/falco.jpg");
+    background-image: url("../../../../assets/images/falco.jpg");
     filter: blur(8px);
     -webkit-filter: blur(8px);
     background-size: cover;

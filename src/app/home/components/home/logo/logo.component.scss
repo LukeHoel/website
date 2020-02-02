@@ -1,4 +1,3 @@
-@import '../../../variables.scss';
 div{
   width: 100%;
   display: flex;
@@ -8,13 +7,13 @@ div{
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-image: url('../../../../assets/images/tempphoto.jpg');
+  background-image: url('../../../../../assets/images/tempphoto.jpg');
 }
 
 mat-icon{
-  color: $dark-bg-color;
+  color: #212121;
   font-size: 80px;
   width: 80px;
   height: 80px;
-  text-shadow: $text-drop-shadow;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }

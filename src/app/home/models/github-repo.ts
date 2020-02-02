@@ -1,3 +1,5 @@
+// This is the model returned by the github repo api at
+// `https://api.github.com/users/${userName}/repos`
 export class GithubRepo {
     id: number;
     node_id: string;

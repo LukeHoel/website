@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { TimelineComponent } from '../timeline/timeline.component';
-import { GithubReposService } from 'src/app/services/github-repos.service';
-import { GithubRepo } from 'src/app/models/timeline-item';
+import { GithubReposService } from 'src/app/home/services/github-repos.service';
+import { GithubRepo } from 'src/app/home/models/github-repo';
 
 @Component({
   selector: 'app-home',

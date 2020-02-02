@@ -1,13 +1,13 @@
-@import "../../variables.scss";
 .main{
   background-color: #1E88E5;
-  background-image: url('../../../assets/images/bg.svg');
+  background-image: url('../../../../assets/images/bg.svg');
   background-attachment: fixed;
   background-size: 600px 600px;
   background-repeat: repeat;
   animation: slide 30s linear infinite;
   transition-property: background-position;
   transition: 0s linear;
+  
 }
 @keyframes slide {
   from {
@@ -42,32 +42,27 @@ $bg-color: #fafafa;
   justify-content: center;
   display: flex;
   flex-direction: column;
-}
+  .githubReposWrapper{
+    margin-bottom: 20px;
+  }
+  .githubRepos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  app-github-repo{
+    display: inline;
+    opacity: 1;
+    transition: opacity .2s ease;
+    &:hover{
+      cursor: pointer;
+      opacity: .7;
+    }
+  }
+
 h2{
   width: 100%;
   text-align: center;
 }
-.githubReposWrapper{
-  // height: 500px;
-  // overflow-y: auto;
-  margin-bottom: 20px;
-}
-.githubRepos{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-app-github-repo{
-  display: inline;
-  width: 400px;
-  opacity: 1;
-  transition: opacity .2s ease;
-  &:hover{
-    cursor: pointer;
-    opacity: .7;
-  }
-}
-mat-icon{
-  font-size: 25px;
 }
