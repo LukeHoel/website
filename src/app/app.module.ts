@@ -11,17 +11,20 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { HomeComponent } from "./home/components/home/home.component";
 import { MatListModule } from "@angular/material/list";
-import { LogoComponent } from './home/components/home/logo/logo.component';
+import { LogoComponent } from './home/components/logo/logo.component';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { IntroSectionComponent } from './home/components/home/intro-section/intro-section.component';
-import { ProjectsSectionComponent } from './home/components/home/projects-section/projects-section.component';
+import { IntroSectionComponent } from './home/components/intro-section/intro-section.component';
+import { ProjectsSectionComponent } from './home/components/projects-section/projects-section.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatRippleModule } from '@angular/material/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatCardModule } from '@angular/material/card';
-import { GithubRepoComponent } from './home/components/home/github-repo/github-repo.component';
-import { GithubRepoDetailComponent } from './home/components/home/github-repo-detail/github-repo-detail.component';
+import { GithubRepoComponent } from './home/components/github-repo/github-repo.component';
+import { GithubRepoDetailComponent } from './home/components/github-repo-detail/github-repo-detail.component';
 import { LanguageComponent } from './home/components/language/language.component';
+import { BlogComponent } from './blog/components/blog/blog.component';
+import { BlogsComponent } from './blog/components/blogs/blogs.component';
+import { MarkdownComponent } from './core/components/markdown/markdown.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { LanguageComponent } from './home/components/language/language.component
     ProjectsSectionComponent,
     GithubRepoComponent,
     GithubRepoDetailComponent,
-    LanguageComponent
+    LanguageComponent,
+    BlogComponent,
+    BlogsComponent,
+    MarkdownComponent
   ],
   imports: [
     BrowserModule,

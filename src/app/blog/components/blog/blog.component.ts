@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { BlogsService } from '../../services/blogs.service';
 
 @Component({
   selector: 'app-blog',
@@ -7,8 +8,8 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent {
-  id: number;
-  constructor(public route: ActivatedRoute) {
-    route.params.subscribe((params: { id: number }) => this.id = params.id);
+  markdown: string;
+  constructor(public route: ActivatedRoute, private blogsService: BlogsService) {
+    route.params.subscribe(({ id }) => this.blogsService.getBlog(id).subscribe(markdown => this.markdown = markdown));
   }
 }

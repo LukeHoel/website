@@ -2,12 +2,11 @@
   "name": "website",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "generateTableOfContents": "ls -1 src/assets/blogs | grep -v tableOfContents > src/assets/blogs/tableOfContents",
+    "predev": "npm run generateTableOfContents",
+    "dev": "ng serve",
+    "predist": "npm run generateTableOfContents",
+    "dist": "ng build && cp src/CNAME docs/"
   },
   "private": true,
   "dependencies": {
