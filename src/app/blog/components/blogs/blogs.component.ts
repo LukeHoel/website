@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { BlogsService } from '../../services/blogs.service';
+import { GithubGistsService } from '../../services/github-gists.service';
+import { GithubGist } from '../../models/github-gist';
 
 @Component({
   selector: 'app-blogs',
@@ -7,11 +8,8 @@ import { BlogsService } from '../../services/blogs.service';
   styleUrls: ['./blogs.component.scss']
 })
 export class BlogsComponent implements OnInit {
-
-  constructor(private blogsService: BlogsService) { }
-
+  constructor(private githubGistsService: GithubGistsService) { }
   ngOnInit() {
-    this.blogsService.getBlogs().subscribe((data) => console.error(data));
   }
-
+  githubGists = () => this.githubGistsService.githubGists;
 }
