@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { GithubGistsService } from '../../services/github-gists.service';
 
 @Component({
   selector: 'app-blog',
@@ -7,8 +8,9 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent {
-  markdown: string;
-  constructor(public route: ActivatedRoute) {
-    // route.params.subscribe(({ id }) => this.blogsService.getBlog(id).subscribe(markdown => this.markdown = markdown));
+  id: string;
+  constructor(private route: ActivatedRoute, private githubGistsService: GithubGistsService) {
+    route.params.subscribe(({ id }) => this.id = id);
   }
+  githubGists = () => this.githubGistsService.githubGists.filter(githubGist => githubGist.id === this.id);
 }

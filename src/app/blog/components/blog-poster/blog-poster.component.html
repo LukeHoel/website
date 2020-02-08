@@ -1,0 +1,11 @@
+<span class="blogPoster">
+    <a mat-icon-button routerLink="/home">
+        <mat-icon>arrow_back</mat-icon>
+    </a>
+    <img [src]="githubGist.owner.avatar_url">
+    <span class="userInfo">
+        <!-- <span>{{githubGist.owner.login}}</span> -->
+        <span>Luke Hoel</span>
+        <span>{{githubGist.created_at|date}}</span>
+    </span>
+</span>

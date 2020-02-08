@@ -1,6 +1,8 @@
 <div class="blogs">
-    <mat-card *ngFor="let githubGist of githubGists()">
-        <div>{{githubGist.name}}</div>
-        <app-markdown [markdown]="githubGist.content"></app-markdown>
-    </mat-card>
+    <a *ngFor="let githubGist of githubGists()" [routerLink]="['/blog',githubGist.id]">
+        <mat-card>
+            <div>{{githubGist.name}}</div>
+            <app-markdown [markdown]="githubGist.content"></app-markdown>
+        </mat-card>
+    </a>
 </div>

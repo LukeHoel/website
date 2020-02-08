@@ -8,7 +8,14 @@ import { GithubRepo } from '../models/github-repo';
   providedIn: 'root'
 })
 export class GithubReposService {
-  constructor(private http: HttpClient) { }
+
+  githubRepos: GithubRepo[] = [];
+
+  constructor(private http: HttpClient) {
+    this.getRepos().subscribe(githubRepos => {
+      this.githubRepos = githubRepos;
+    });
+  }
   getRepos(): Observable<GithubRepo[]> {
     return this.http.get<GithubRepo[]>("https://api.github.com/users/lukehoel/repos");
   }

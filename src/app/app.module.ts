@@ -25,6 +25,7 @@ import { LanguageComponent } from './home/components/language/language.component
 import { BlogComponent } from './blog/components/blog/blog.component';
 import { BlogsComponent } from './blog/components/blogs/blogs.component';
 import { MarkdownComponent } from './core/components/markdown/markdown.component';
+import { BlogPosterComponent } from './blog/components/blog-poster/blog-poster.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { MarkdownComponent } from './core/components/markdown/markdown.component
     LanguageComponent,
     BlogComponent,
     BlogsComponent,
-    MarkdownComponent
+    MarkdownComponent,
+    BlogPosterComponent
   ],
   imports: [
     BrowserModule,
