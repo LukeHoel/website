@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "ng serve",
-    "dist": "ng build",
+    "dist": "ng build --prod",
     "postdist": "cp src/CNAME docs/"
   },
   "private": true,

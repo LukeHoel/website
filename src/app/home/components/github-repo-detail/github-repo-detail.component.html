@@ -5,7 +5,6 @@
             {{githubRepo.name}}
         </span>
         <a [href]="githubRepo.html_url" target="_blank">{{githubRepo.html_url}}</a>
-        <div [innerHtml]="markDown"></div>
         <app-markdown [markdown]="markdown"></app-markdown>
         <button class="backButton" mat-button (click)="back.emit({})">
             Back
